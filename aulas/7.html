@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+    <style>
+        body {
+            background: rgb(0, 0, 0);
+            color: white;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Qual sua nacionalidade?</strong></h1>
+    Onde você nasceu? <input type="text" name="nasc" id="nasc">
+    <input type="button" value="verificar" onclick="verificacao()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificacao(){
+        var nascido = window.document.querySelector('input#nasc').value;
+        var res = window.document.querySelector('div#res')
+        res.innerHTML = `Você nasceu no pais <strong>${nascido}</strong>.`
+        if (nascido != 'Brasil'){
+            res.innerHTML += `<br>Você é <strong>estrangeniro</strong>.`
+        }
+        else{
+            res.innerHTML = `<br>Você é <strong>Brasileiro</strong>😁😁😁.`
+        }
+        }
+    </script>
+    
+</body>
+</html>

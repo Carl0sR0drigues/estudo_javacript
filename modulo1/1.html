@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1{
+            color: red;
+            font: normal 20pt Arial;
+        }
+        p{
+            color: blue;
+            font: normal 16pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Olá, mundo!!!
+    </h1>
+    <p>
+        Já me livrei da maldição!!!
+    </p>
+    <script>
+        window.alert('Minha primeita mensagem!')
+        const resposta = window.confirm('Está gostando de JS?')
+        const nome = window.prompt('Qual seu nome?')
+        console.log('Gostando de JS?',resposta)
+        console.log('Nome informado:',nome)
+        if (nome){
+            alert(`Olá, ${nome}! Seja bem-vindo ao JavaScript!`)
+        }
+        else {
+            alert('Não quer contar seu nome? Sem problemas!')
+        }
+    </script>
+</body>
+</html>
+

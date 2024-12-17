@@ -1,0 +1,38 @@
+body {
+    background: rgb(70, 142, 236); /*Cor de fundo da pagina*/
+    font: 15pt Arial; /* Estilo do texto geral da pagina */
+    min-height: 100vh;
+}
+
+header {
+    color: white; /* Colocar cor no texta da caixa */
+    text-align: center; /* Deixa o texto no centro da pagina */
+
+}
+
+section {
+    background: white; /* Cor de fundo da seção section*/
+    border-radius: 10px; /* Faz contorno nas bordas */
+    padding: 15px; /* Dá espaço superior e inferio na caixa de texto */
+    width: 500px; /* Defini a largura da caixa de texto */
+    margin: auto; /* Colocar a caixa no centro da pagina */
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.363);
+
+}
+
+footer {
+    display: flex; /* Ativa o layout flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: fixed; /* Fixa o footer na tela */
+    bottom: 0; /* Coloca o footer no final da página */
+    left: 0; /* Garante que começa do canto esquerdo */
+    width: 100%; /* Largura total */
+    height: 8px; /* Altura fixa do footer */
+    background: black; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-style: italic; /* Texto em itálico */
+    text-align: center; /* Centraliza o texto */
+    padding: 8px 0; /* Espaçamento vertical */
+    margin: 0; /* Remove margens extras */
+}

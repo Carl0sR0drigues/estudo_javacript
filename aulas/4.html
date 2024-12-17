@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERAÇÃO DOM</title>
+    <style>
+        div#area{
+            font: normal 14pt Arial black;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 400px; /*largura*/
+            height: 200px; /*altura*/
+            line-height: 200px; /*altura do texto*/
+            text-align: center; /*centro do texto*/
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
+        Interaja....
+    </div>
+    <script>
+        var clicando = window.document.getElementById('area')
+
+        function clicar(){
+            clicando.innerHTML = 'TU CLICOU, FII DA PUTO!!!'
+        }
+        function entrou(){
+             clicando.innerHTML = 'Caguei'
+             clicando.style.background = 'red'
+
+        }
+        function saiu(){
+            clicando.innerHTML = 'Eu vou fazer coco'
+            clicando.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
