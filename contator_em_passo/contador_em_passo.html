@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador em Passo</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <header>
+    <h1>Vamos contar</h1>
+    </header>
+    <section id="informa">
+        <div>
+            <p>
+                Inicio: <input type="number" id="inicio">
+            </p>
+
+            <p>
+                Fim: <input type="number" id="fim">
+            </p>
+
+            <p>
+                Passo: <input type="number" id="passo">
+            </p>    
+
+            <p>
+                <button onclick="contar()">CONTAR</button>
+            </p>
+
+            <div id="contando">
+                Preparando para contar....<br>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; DevCarlosJs</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@ body {
 header {
     color: white; /* Colocar cor no texta da caixa */
     text-align: center; /* Deixa o texto no centro da pagina */
-
+    
 }
 
 section {
@@ -17,9 +17,9 @@ section {
     width: 500px; /* Defini a largura da caixa de texto */
     margin: auto; /* Colocar a caixa no centro da pagina */
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.363);
-
+    font: 15pt Arial; /* Estilo do texto geral da pagina */
 }
-
+    
 footer {
     display: flex; /* Ativa o layout flexbox */
     justify-content: center; /* Centraliza horizontalmente */
@@ -36,6 +36,13 @@ footer {
     padding: 8px 0; /* Espaçamento vertical */
     margin: 0; /* Remove margens extras */
 }
+    
 
-
-
+p {
+    background: white; /* Cor de fundo da seção section*/
+    border-radius: 10px; /* Faz contorno nas bordas */
+    padding: 5px; /* Dá espaço superior e inferio na caixa de texto */
+    width: auto; /* Defini a largura da caixa de texto */
+    margin: auto; /* Colocar a caixa no centro da pagina */
+    font: 15pt Arial black; /* Estilo do texto geral da pagina */    
+}
