@@ -36,7 +36,3 @@ footer {
     padding: 8px 0; /* Espaçamento vertical */
     margin: 0; /* Remove margens extras */
 }
-
-select#seltab{
-    width: 100px;
-}
