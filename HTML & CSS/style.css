@@ -1,0 +1,31 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pai{
+    height: 100vh;
+    background: yellow;
+    overflow: hidden;
+}
+.um{
+    background: rgb(255, 0, 0);
+}
+.dois{
+    background: rgba(255, 0, 0, 0.666);
+}
+.tres{
+    background: rgba(255, 0, 0, 0.333);
+}
+.numero{
+
+    position: fixed;
+    right: 5px;
+    text-transform: uppercase;
+    top: 5px;
+}

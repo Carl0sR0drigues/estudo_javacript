@@ -1,0 +1,14 @@
+body {
+    background-color: #27272a;
+}
+.container{
+    display: flex;
+    background-color: #6366f1;
+    height: 600px;
+    gap: 20px;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: #38bdf8;
+}
