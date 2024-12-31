@@ -4,12 +4,14 @@
 }
 body {
     scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial;
+    font-family: 'Georgia', serif;
+    font-family: 'Verdana', sans-serif;
 }
-.pai{
-    height: 100vh;
-    overflow: hidden;
-}
+
 .div1{
+    display: block;
     height: 100vh; 
     color: rgb(255, 0, 0);
     background-color: rgb(0, 0, 0);
@@ -23,27 +25,37 @@ body {
     margin: 15px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-}
-
-.div2 a{
-    text-decoration: none;
-}
-
-.diva{
-    height: 100vh; 
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: left;
-    font-size: 15px;
     text-align: center;
 }
+.div2{
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 18px;
+
+}
+.diva{
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 18px;
+}
+.diva a {
+    width: 1080px; /* Define a largura do link */
+    display: block;
+    margin: auto;
+}
+
 .divb{
     height: 100vh; 
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.8);
-    justify-content: left;
-    font-size: 15px;
-    text-align: center;
+    font-size: 18px;
+}
+.divb a {
+    width: 1080px; /* Define a largura do link */
+    display: block;
+    margin: auto;
 }
 .divc{
     height: 100vh; 
