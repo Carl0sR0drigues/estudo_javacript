@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.titulo {
+    display: block;
+    height: 100vh;
+    color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.titulo h2 {
+    display: block;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    text-align: justify; /* Alinha o texto de forma justificada */
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Arial; /* Opcional: Definir largura para melhor controle */
+    width: 50%; /* Ajuste a largura conforme necessário */
+}

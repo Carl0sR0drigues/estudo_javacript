@@ -18,7 +18,7 @@ body {
     justify-content: left;
     font-size: 15px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 175px;
 }
 
 .div1 h2{
@@ -46,6 +46,7 @@ body {
     margin: auto;
 }
 
+
 .divb{
     height: 100vh; 
     color: rgb(255, 255, 255);
@@ -57,37 +58,57 @@ body {
     display: block;
     margin: auto;
 }
-.divc{
+
+
+.divc {
     height: 100vh; 
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.7);
-    justify-content: left;
-    font-size: 15px;
-    text-align: center;
+    font-size: 18px;
 }
-.divd{
+.divc a {
+    width: 1080px; /* Define a largura do link */
+    display: block;
+    margin: auto;
+}
+
+
+.divd {
     height: 100vh; 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.6);
-    justify-content: left;
-    font-size: 15px;
-    text-align: center;
+    font-size: 18px;
 }
+.divd a {
+    width: 1080px; /* Define a largura do link */
+    display: block;
+    margin: auto;
+}
+
+
 .dive{
     height: 100vh; 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.5);
-    justify-content: left;
-    font-size: 15px;
-    text-align: center;
+    font-size: 18px;
 }
+.dive a {
+    width: 1080px; /* Define a largura do link */
+    display: block;
+    margin: auto;
+}
+
+
 .divf{
     height: 100vh; 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-    justify-content: left;
-    font-size: 15px;
-    text-align: center;
+    font-size: 18px;
+}
+.divf a {
+    width: 1080px; /* Define a largura do link */
+    display: block;
+    margin: auto;
 }
 
 
