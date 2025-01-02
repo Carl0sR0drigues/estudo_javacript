@@ -28,3 +28,8 @@ body{
     font-family: Arial; /* Opcional: Definir largura para melhor controle */
     width: 50%; /* Ajuste a largura conforme necessário */
 }
+
+.titulo img {
+    margin-top: 5px;
+    width: 40%;
+}
