@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo_js.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 10</title>
+</head>
+<body>
+    <div class="titulo" id="abc">
+        <a class="topo" href="#abc"><img src="topo.png" alt=""></a>
+        <h1>
+            EVENTOS
+        </h1>
+        <p>
+            Eventos são ações disparadas pela interação dos usuarios na pagina.
+            É o correto manejo desses eventos que tornam as pagunas interativas e dianamicas.
+            <br><br>
+            Existem muitos eventos. Veja os mais utilizados:
+            <br>
+            <br><a href="#a">onclick</a> -> Disparado quando recebe um click.
+            <br><a href="#b">ondblclick</a> -> Disparado quando recebe click duplo.
+            <br><a href="#c">onmouseover</a> -> Disparado quando o mouse esta sobre.
+            <br><a href="#d">onmouseout</a> -> Disparado quando o mouse é movido para fora do elemento.
+            <br><a href="#e">onmousemove</a> -> Disparado quando o mouse é movido no elemento.
+            <br><a href="#f">onmousedown</a> -> Disparado quando o click do botão foi pressionado.
+            <br><a href="#g">onmouseup</a> -> Disparado quando o click do botão é liberado.
+            <br><a href="#h">onfocus</a> -> Disparado quando o elemento recebe o foco. Valido para input, ************
+            <br><a href="#i">onchange</a> -> Disparado quando existe uma mudança no conteudo. "Ao mudar"
+            <br><a href="#j">onblur</a> -> Disparado quando o elemento perde o foco.
+            <br><a href="#k">onkeydow</a> -> Disparado quando uma tecla é pressionada.
+            <br><a href="#l">onkeypress</a> -> Disparado quando uma tecla é pressionada e solta.
+            <br><a href="#m">onkeyup</a> -> Disparado quando uma tecla é solta sobre um elemento.
+            <br><a href="#n">onload</a> -> Disparado quando a pagina terminou de ser carregada. Body.
+            <br><a href="#o">onresize</a> -> Disparado quando há um redimencionamento da janela.
+        </p>
+    </div>
+    
+    <div class="a" id="a">
+        <h1>
+            ONCLICK
+        </h1>
+        <P>
+            A propriedade <b style="color: red;">onclick</b> é usada para associar um evento a um elemento HTML, permitindo que uma função seja executada quando o elemento for clicado.<br>
+            Descrição Detalhada:<br>
+            Nome do Evento: <b style="color: red;">onclick</b><br>
+            Significado: Disparado quando o elemento ao qual está associado recebe um clique (geralmente com o botão principal do mouse).
+            Uso Comum: Geralmente usado para executar funções JavaScript ao clicar em botões, imagens, links ou outros elementos HTML.
+        </P>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onclick="onclick1()" >CLIQUE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onclick="onclick2()" >CLIQUE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onclick</b></p>
+    </div>
+
+    <div class="b" id="b">
+        <h1>
+            ONDBLCLICK
+        </h1>
+        <P>
+            O evento <b style="color: red;">ondblclick</b> no HTML é disparado quando o usuário realiza um clique duplo em um elemento. Ele é diferente do evento onclick, que é acionado com apenas um clique simples.<br>
+            Explicação<br>
+            <b style="color: red;">ondblclick:</b> É usado para executar uma ação ao clicar duas vezes rapidamente sobre o elemento.<br>
+            Diferença para <b style="color: red;">onclick:</b><br>
+            <b style="color: red;">onclick:</b> Dispara no primeiro clique.<br>
+            <b style="color: red;">ondblclick:</b> Exige dois cliques consecutivos em rápida sucessão.
+        </P>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" ondblclick="dblclick1()" >CLIQUE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" ondblclick="dblclick2()" >CLIQUE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">ondblclick</b></p>
+    </div>
+
+    <div class="c" id="c">
+        <h1>
+            ONMOUSEOVER
+        </h1>
+        <P>
+            O evento <b style="color: red;">onmouseover</b> é disparado quando o ponteiro do mouse passa ou fica sobre um elemento HTML. 
+            Esse evento é muito útil para criar interatividade, como alterar o estilo ou exibir informações adicionais quando o usuário interage com o elemento.
+
+            <br>Explicação:<br>
+            <b style="color: red;">onmouseover:</b> Ocorre no momento em que o mouse entra na área do elemento.
+
+        </P>
+        <br>
+        <br>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseover="onmouseover1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseover="onmouseover2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseover</b></p>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -14,3 +14,17 @@ body{
     font-family: arial;
     text-decoration: underline;
 }
+
+.titulo p {
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.titulo img {
+    width: 650px;
+    display: block;
+    padding: 2px;
+    margin: auto;
+    color: white;
+}
