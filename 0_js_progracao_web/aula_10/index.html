@@ -19,15 +19,15 @@
             <br><br>
             Existem muitos eventos. Veja os mais utilizados:
             <br>
-            <br><a href="#a">onclick</a> -> Disparado quando recebe um click.
-            <br><a href="#b">ondblclick</a> -> Disparado quando recebe click duplo.
-            <br><a href="#c">onmouseover</a> -> Disparado quando o mouse esta sobre.
-            <br><a href="#d">onmouseout</a> -> Disparado quando o mouse é movido para fora do elemento.
-            <br><a href="#e">onmousemove</a> -> Disparado quando o mouse é movido no elemento.
-            <br><a href="#f">onmousedown</a> -> Disparado quando o click do botão foi pressionado.
+            <br><a href="#a">onclick</a> -> Disparado quando recebe um click. <B>OK</B>
+            <br><a href="#b">ondblclick</a> -> Disparado quando recebe click duplo.<B>OK</B>
+            <br><a href="#c">onmouseover</a> -> Disparado quando o mouse esta sobre.<B>OK</B>
+            <br><a href="#d">onmouseout</a> -> Disparado quando o mouse é movido para fora do elemento.<B>OK</B>
+            <br><a href="#e">onmousemove</a> -> Disparado quando o mouse é movimentado no elemento.<B>OK</B>
+            <br><a href="#f">onmousedown</a> -> Disparado quando o click do botão foi pressionado.<B>OK</B>
             <br><a href="#g">onmouseup</a> -> Disparado quando o click do botão é liberado.
-            <br><a href="#h">onfocus</a> -> Disparado quando o elemento recebe o foco. Valido para input, ************
-            <br><a href="#i">onchange</a> -> Disparado quando existe uma mudança no conteudo. "Ao mudar"
+            <br><a href="#h">onfocus</a> -> Disparado quando o elemento recebe o foco.
+            <br><a href="#i">onchange</a> -> Disparado quando existe uma mudança no conteudo. "Ao mudar" 
             <br><a href="#j">onblur</a> -> Disparado quando o elemento perde o foco.
             <br><a href="#k">onkeydow</a> -> Disparado quando uma tecla é pressionada.
             <br><a href="#l">onkeypress</a> -> Disparado quando uma tecla é pressionada e solta.
@@ -48,9 +48,13 @@
             Significado: Disparado quando o elemento ao qual está associado recebe um clique (geralmente com o botão principal do mouse).
             Uso Comum: Geralmente usado para executar funções JavaScript ao clicar em botões, imagens, links ou outros elementos HTML.
         </P>
-        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onclick="onclick1()" >CLIQUE</button>
-        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onclick="onclick2()" >CLIQUE</button>
+        <button style="width: 100px; height: 100px; margin-top: 5px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onclick="onclick1()" >CLIQUE</button>
+        <button style="width: 100px; height: 100px; margin-top: 5px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onclick="onclick2()" >CLIQUE</button>
         <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onclick</b></p>
+        <p style="text-align: center; margin-top: 10px;">Codigo JavaScript</p>
+        <img src="funcao_click.png" alt="" style="margin-left: 25px; max-width: 550px; border: 1px solid red;"><br>
+        <p style="text-align: center;">Codigo HTML</p>
+        <img src="onclick.png" alt="" style="border: 1px solid red;">
     </div>
 
     <div class="b" id="b">
@@ -65,9 +69,13 @@
             <b style="color: red;">onclick:</b> Dispara no primeiro clique.<br>
             <b style="color: red;">ondblclick:</b> Exige dois cliques consecutivos em rápida sucessão.
         </P>
-        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" ondblclick="dblclick1()" >CLIQUE</button>
-        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" ondblclick="dblclick2()" >CLIQUE</button>
+        <button style="width: 100px; height: 100px; margin-top: 5px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" ondblclick="dblclick1()" >CLIQUE</button>
+        <button style="width: 100px; height: 100px; margin-top: 5px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" ondblclick="dblclick2()" >CLIQUE</button>
         <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">ondblclick</b></p>
+        <p style="text-align: center; margin-top: 10px;">Codigo JavaScript</p>
+        <img src="funcao_dblclick.png" alt="" style="margin-left: 25px; max-width: 550px; border: 1px solid red;"><br>
+        <p style="text-align: center;">Codigo HTML</p>
+        <img src="dblclick.png" alt="" style="border: 1px solid red;">
     </div>
 
     <div class="c" id="c">
@@ -82,13 +90,312 @@
             <b style="color: red;">onmouseover:</b> Ocorre no momento em que o mouse entra na área do elemento.
 
         </P>
-        <br>
-        <br>
-        <br>
         <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseover="onmouseover1()" >PASSE O MOUSE</button>
         <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseover="onmouseover2()" >PASSE O MOUSE</button>
         <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseover</b></p>
+        <p style="text-align: center; margin-top: 10px;">Codigo JavaScript</p>
+        <img src="funcao_onmouseover.png" alt="" style="margin-left: 25px; max-width: 550px; border: 1px solid red;"><br>
+        <p style="text-align: center;">Codigo HTML</p>
+        <img src="onmouseover.png" alt="" style="border: 1px solid red;">
     </div>
+
+    <div class="d" id="d">
+        <h1>
+            ONMOUSEOUT
+        </h1>
+        <P>
+            <br>A propriedade <b style="color: red;">onmouseout</b> em JavaScript é um manipulador de eventos usado para detectar quando o ponteiro do mouse sai de dentro de um elemento HTML. 
+            <br>Esse evento é útil para realizar ações como alterar o estilo do elemento ou reverter alterações feitas durante o evento <b style="color: red;">onmouseout</b>.
+            <br>Funcionamento
+            <br>Quando o ponteiro do mouse deixa a área de um elemento, o evento <b style="color: red;">onmouseout</b> é disparado e a função associada é executada.
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseout="onmouseout1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseout="onmouseout2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseout</b></p>
+        <br>
+        <p style="text-align: center;">Codigo HTML</p>
+        <img src="onmouseout.png" alt="" style="border: 1px solid red;">
+        <p style="text-align: center;">A função JavaScript, segue o mesmo padrão dos demais.</p>
+    </div>
+
+    <div class="e" id="e">
+        <h1>
+            ONMOUSEMOVE
+        </h1>
+        <P>
+            <br>O evento <b style="color: red;">onmousemove</b> é disparado continuamente enquanto o ponteiro do mouse está sendo movido sobre um elemento. 
+            <br>Ele é frequentemente usado para rastrear a posição do mouse ou para criar interações dinâmicas baseadas no movimento do ponteiro.
+
+            <br>O evento <b style="color: red;">onmousemove</b> é acionado sempre que o ponteiro se move dentro da área do elemento associado.
+            <br>Ele pode ser usado, por exemplo, para: Detectar a posição X e Y do mouse.
+            <br>Criar animações ou efeitos dinâmicos.
+            <br>Atualizar valores com base no movimento do mouse.
+        </P>
+
+
+        <button style="width: 800px; height: 50px; margin-top: 5px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 2px solid white;" onmousemove="onmousemove1()" >MOVIMENTE O MOUSE<br>AQUI</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmousemove</b></p>
+        
+        <p style="text-align: center; margin-top: 10px;">Codigo JavaScript</p>
+        <img src="funcao_duasCores.png" alt="" style="margin-left: 25px; max-width: 400px; border: 1px solid red;"><br>
+        <p style="text-align: center;">Codigo HTML</p>
+        <img src="duasCores.png" alt="" style="border: 1px solid red;">
+    </div>
+
+    <div class="f" id="f">
+        <h1>
+            ONMOUSEDOWN
+        </h1>
+        <P>
+            O evento <b style="color: red;">onmousedown</b> é disparado no momento em que um botão do mouse é pressionado enquanto o cursor está sobre um elemento. Ele ocorre antes de o botão ser solto, sendo ideal para capturar o início de uma interação via clique.
+
+            O <b style="color: red;">onmousedown</b> é acionado no instante em que o botão do mouse é pressionado (antes do onmouseup e do onclick).
+            Ele pode detectar qual botão do mouse foi pressionado, como o botão esquerdo, direito ou do meio.
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; margin-right: 15px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmousedown="onmousedown1()" >CLIQUE AQUI</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; margin-left: 15px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmousedown="onmousedown2()" >CLIQUE AQUI</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmousedown</b></p>
+        <br>
+        <p style="text-align: center;">Codigo HTML</p>
+        <img src="onmousedown.png" alt="" style="border: 1px solid red;">
+        <p style="text-align: center;">A função JavaScript, segue o mesmo padrão dos demais.</p>
+    </div>
+    
+    <div class="g" id="g">
+        <h1>
+            ONMOUSEUP
+        </h1>
+        <P>
+            O evento <b style="color: red;">onmouseup</b> é disparado no momento em que um botão do mouse é liberado após ter sido pressionado enquanto o cursor está sobre um elemento. 
+            Ele complementa o evento onmousedown, sendo ideal para capturar o final de uma interação via clique.
+
+            O <b style="color: red;">onmouseup</b> ocorre quando o botão do mouse é solto.
+            Ele pode ser usado para detectar o término de uma ação iniciada com onmousedown.
+            É acionado tanto para o botão esquerdo, quanto para o botão direito ou do meio.
+            
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; margin-right: 15px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseup="onmouseup1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; margin-left: 15px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseup="onmouseup2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseup</b></p>
+        <br>
+        <p style="text-align: center;">Codigo HTML</p>
+        <img src="onmousedown.png" alt="" style="border: 1px solid red;">
+        <p style="text-align: center;">A função JavaScript, segue o mesmo padrão dos demais.</p>
+    </div>
+    </div>
+    
+    <div class="h" id="h">
+        <h1>
+            ONFOCUS
+        </h1>
+        <P>
+            O evento onfocus é disparado quando um elemento HTML recebe o foco, geralmente ao ser clicado com o mouse ou acessado via teclado (como com a tecla Tab). 
+            Ele é mais comumente usado em elementos interativos, como caixas de texto, botões e outros componentes de formulário.
+
+            Principais Características do onfocus
+            Quando ocorre: O evento é acionado quando o elemento está pronto para receber entrada do usuário.
+            Onde é utilizado: Em elementos que podem ser focados, como &lt;input&gt;, &lt;textarea>, &lt;select>, &lt;button>, e até &lt;a> (se configurado com tabindex).
+            Foco do navegador: Geralmente depende de como o usuário interage com a página (mouse ou teclado).
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseout="onmouseout1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseout="onmouseout2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseout</b></p>
+    </div>
+    
+    <div class="i" id="i">
+        <h1>
+            ONCHANGE
+        </h1>
+        <P>
+            O evento onchange é disparado quando há uma mudança no conteúdo de um elemento e essa mudança é confirmada. Geralmente, ele é usado em elementos interativos, como campos de formulário, e ocorre quando o valor do elemento muda e perde o foco.
+
+            Principais Características do onchange
+            Quando ocorre:
+            
+            O evento é disparado após o foco sair do elemento e o valor tiver sido modificado.
+            Para alguns elementos, como caixas de seleção (&lt;select&gt;), ele dispara imediatamente após a seleção de um novo valor.
+            Onde é utilizado:
+            
+            Principalmente em campos de entrada, como &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt; e outros elementos que permitem ao usuário alterar dados.
+            
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseout="onmouseout1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseout="onmouseout2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseout</b></p>
+    </div>
+    
+    <div class="j" id="j">
+        <h1>
+            ONBLUR
+        </h1>
+        <P>
+            O evento onblur é disparado quando um elemento de entrada (como &lt;input&gt;, &lt;textarea&gt;, etc.) perde o foco. Isso significa que o usuário clicou fora do elemento ou usou a tecla Tab para navegar para outro campo ou elemento da página.
+
+                Características Principais do onblur
+                Quando ocorre:
+                
+                Disparado assim que o elemento perde o foco, independentemente de haver alterações no valor.
+                Onde é utilizado:
+                
+                Geralmente em campos de formulário para validações ou para atualizar dados automaticamente após a interação do usuário.
+                Diferença para onchange:
+                
+                O onchange só dispara se o valor foi alterado antes do foco ser perdido.
+                O onblur dispara sempre que o elemento perde o foco, independente de mudanças no conteúdo.
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseout="onmouseout1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseout="onmouseout2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseout</b></p>
+    </div>
+    
+    <div class="k" id="k">
+        <h1>
+            ONKEYDOW
+        </h1>
+        <P>
+            O evento onkeydown é disparado quando uma tecla é pressionada no teclado. Esse evento ocorre assim que a tecla é pressionada, antes de ser liberada, o que o torna útil para detectar ações rápidas de teclado.
+
+            Características do onkeydown:
+            Quando ocorre:
+            
+            Assim que uma tecla é pressionada, antes mesmo do caractere ser inserido no campo ou do evento onkeypress.
+            Diferença para outros eventos de teclado:
+            
+            onkeypress (obsoleto): Também ocorre ao pressionar uma tecla, mas não é acionado para teclas não imprimíveis (como Ctrl ou F1).
+            onkeyup: Ocorre quando a tecla é liberada, após onkeydown.
+            Acesso à tecla pressionada:
+            
+            A propriedade event.key retorna a tecla específica.
+            event.code retorna o código da tecla física, independente do idioma.
+            
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseout="onmouseout1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseout="onmouseout2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseout</b></p>
+    </div>
+    
+    <div class="l" id="l">
+        <h1>
+            ONKEYPRESS
+        </h1>
+        <P>
+            O evento onkeypress é disparado quando uma tecla é pressionada e liberada. Ele é utilizado para capturar entradas de texto, como quando um caractere é inserido em um campo de texto. Esse evento acontece após o onkeydown (quando a tecla é pressionada) e antes do onkeyup (quando a tecla é liberada).
+
+            Características do onkeypress:
+            Quando ocorre:
+            
+            O evento é disparado quando uma tecla é pressionada e depois liberada.
+            Ele captura apenas teclas que resultam em caracteres visíveis, como letras, números e alguns símbolos.
+            Teclas que não são capturadas:
+            
+            As teclas modificadoras como Shift, Ctrl, Alt e as teclas de função (F1, F2, etc.) não disparam o evento onkeypress, pois não geram caracteres visíveis.
+            Acesso à tecla pressionada:
+            
+            O valor da tecla pressionada pode ser obtido através da propriedade event.charCode (ou event.keyCode, que está obsoleto).
+            event.key também pode ser usado para obter a tecla pressionada (como "a", "Enter", etc.).
+            
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseout="onmouseout1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseout="onmouseout2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseout</b></p>
+    </div>
+    
+    <div class="m" id="m">
+        <h1>
+            ONKEYUP
+        </h1>
+        <P>
+            O evento onkeyup é disparado quando uma tecla é solta (ou seja, quando o usuário deixa de pressionar uma tecla) enquanto o foco está sobre um determinado elemento, 
+            geralmente um campo de entrada de texto ou qualquer outro elemento que possa capturar eventos do teclado.
+
+            Características do onkeyup:
+            Quando ocorre:
+            
+            O evento é disparado após a tecla ser solta.
+            Ele acontece após o evento onkeydown (quando a tecla é pressionada) e após o evento onkeypress (quando a tecla é pressionada e liberada).
+            Captura da tecla solta:
+            
+            Você pode acessar o valor da tecla solta usando a propriedade event.key, que retorna o nome da tecla pressionada (como "a", "Enter", "Backspace", etc.).
+            Em navegadores mais antigos, pode-se usar event.keyCode, mas event.key é a forma mais recomendada e moderna.
+            
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseout="onmouseout1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseout="onmouseout2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseout</b></p>
+    </div>
+        
+    <div class="n" id="n">
+        <h1>
+            ONLOAD
+        </h1>
+        <P>
+            O evento onload é disparado quando a página foi completamente carregada, incluindo todos os elementos (como imagens, scripts, folhas de estilo e outros recursos). 
+            Ele é comumente usado para inicializar funções ou configurações após o carregamento completo da página.
+
+            No caso do onload aplicado ao &lt;body&gt;, ele é executado assim que o conteúdo da página estiver pronto e renderizado no navegador, o que significa que todos os elementos HTML, CSS e scripts foram carregados e estão prontos para serem manipulados.
+            Resumo:
+            O evento onresize é útil para monitorar e reagir ao redimensionamento da janela ou de um elemento. Ele pode ser usado para ajustar o layout, o comportamento da página ou para outras interações dinâmicas baseadas no tamanho da janela ou de um elemento.
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseout="onmouseout1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseout="onmouseout2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseout</b></p>
+    </div>
+        
+    <div class="o" id="o">
+        <h1>
+            ONRESIZE
+        </h1>
+        <P>
+            O evento onresize é disparado sempre que ocorre um redimensionamento da janela do navegador ou de um elemento específico. Ele é útil quando você deseja fazer ajustes na página ou no layout, conforme a janela é redimensionada.
+
+            Como funciona:
+            Em elementos da janela (como window.onresize): O evento é acionado sempre que o tamanho da janela do navegador é alterado (por exemplo, quando o usuário redimensiona a janela).
+            
+            Em elementos específicos: Embora o evento resize também possa ser aplicado a elementos que possuem a propriedade CSS resize, ele não dispara automaticamente em elementos como div, 
+            a menos que o próprio conteúdo ou tamanho seja alterado dinamicamente com JavaScript.
+            
+            Sintaxe:
+            Você pode adicionar o evento onresize diretamente no objeto window ou em elementos da página (embora o uso com o window seja mais comum para monitorar o redimensionamento da janela):
+
+            Detalhes importantes:
+            Usabilidade: É frequentemente usado para ajustar o layout da página, como mudar o número de colunas em um design responsivo ou ajustar imagens e elementos que devem se adaptar ao tamanho da tela.
+
+            Performance: Como o evento onresize pode ser disparado várias vezes durante o redimensionamento, é importante garantir que o código dentro do evento não seja pesado ou cause impactos de performance. 
+            Uma maneira de lidar com isso é usar técnicas de debouncing para limitar a quantidade de execuções.
+
+            Em elementos específicos: Quando usado em elementos, o resize só será acionado se a propriedade CSS resize estiver habilitada (como em uma div com resize: both), mas nem todos os elementos suportam esse evento nativamente.
+
+            Esse evento é essencial para criar páginas responsivas ou para ajustar dinamicamente os elementos do layout conforme o tamanho da janela ou dos componentes
+
+        </P>
+        <br>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: blueviolet; border-color: red; border: 5px solid white;" onmouseout="onmouseout1()" >PASSE O MOUSE</button>
+        <button style="width: 100px; height: 100px; margin-top: 50px; border-radius: 90px; color: red; font-family: 'arial black'; background-color: black; border-color: red; border: 5px solid  white;" onmouseout="onmouseout2()" >PASSE O MOUSE</button>
+        <p style="text-align: center;">O efeito desdes botões é exatamente o <b style="color: red;">onmouseout</b></p>
+    </div>
+    
     <script src="js/index.js"></script>
 </body>
 </html>
+
+
