@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo_js.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 11</title>
+</head>
+<body>
+    <div id="head">
+        <h1>
+            ARRAYS
+        </h1>
+        <h2>
+            Os <b id="b1">arrays</b> JavaScript são usados para armazenar vários valores
+            em uma única variável. Diferente dos objetos, que funcionam com
+            propriedades ou "nomes" que você dá para os itens dentro dele, os
+            <b id="b1">arrays</b> não possuem propriedades. O item dentro dele é encontrado pela
+            posição.
+            <br>
+            Imagine um <b id="b1">arrays</b> como uma lista de itens, com controle, por ordem de
+            posição dentro dele.
+            <br>
+            <br>Ex: const lista = ["arroz","feijão", "macarrão", "leite"];
+            <br>A lista[0] (lista na posição 0) vai conter o valor "arroz".
+            <br>A lista[1] (lista na posição 1) vai conter o valor "feijão".
+            <br>Veja o codigo JS abaixo;
+        </h2>
+        <img src="array.png" alt="">
+        <div id="alertPersonalized" class="alertPersonalized">
+            <div id="alertContent" class="alertContent">
+                <p id="listas" style="color: red;"></p>
+                <br>
+                <button id="botão2" onclick="fecharAlert()"><b>OK</b></button>
+            </div>
+        </div>
+        <button id="botão1" onclick="abrirAlert()"><b>ABRIR LISTA</b></button>
+        <h3>Codigo usado na função ABRIR LISTA</h3>
+        <img src="funçãoArray.png" alt="">
+        
+    </div>
+
+    <div id="head">
+        <h1 style="padding: 50px;">
+            MANIPULAÇÃO DE ARRAY
+        </h1>
+        <br>
+        <h2>
+            <p style="text-align: center;">Existe de varias formas de manipular um <b id="b1">arrays</b> entre elas falaremos de;</p>
+            <br>
+            <br>
+            <a href="#head2"><li id="a1">➡️ Substituição de itens</li></a>
+            <br>
+            <a href="#head3"><li id="a1">➡️ Inserção novos itens</li></a>
+            <br>
+            <a href="#head4"><li id="a1">➡️ Visualização de item especifico</li></a>
+            <br>
+            <a href="#head5"><li id="a1">➡️ Visualização do ultimo item</li></a>
+            <br>
+            <a href="#head6"><li id="a1">➡️ Confirmação se é um array</li></a>
+        </h2>
+    </div>
+    
+    <div class="head2" id="head2">
+        <h1 style="padding: 30px;">
+            SUBSTITUIÇÃO DE ITENS
+        </h1>
+        <div style="display: flex; flex-direction: row; text-align: center;">
+            <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+                <h3>
+                    Como substituir um item de um <b id="b1">arrays</b> com JavaScript.
+                    <br>Substituir um item em um <b id="b1">arrays</b> é muito simples!
+                    <br>Veja o exemplo abaixo:
+                </h3>
+                <br>
+                <br>
+                <br>
+                <p style="padding: 5px;">Código:</p>
+                <img src="substituiçãoArray.png" alt="" style="height: 175px;">
+            </div>
+            <div style="width: 50%; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <h3 style="text-align: justify;">
+                    Explicação:<b id="b1"></b>
+                    <br><br>Cada item em um <b id="b1">arrays</b> tem uma posição (também chamada de índice), que começa do número 0.
+                    <br><br><li>"arroz" está na posição 0.</li>
+                    <li>"feijão" está na posição 1.</li>
+                    <li>"macarrão" está na posição 2.</li>
+                    <li>"leite" está na posição 3.</li>
+                    <br>Para substituir um item, você precisa:
+
+                    Identificar a posição do item que deseja substituir.
+                    Usar o nome do <b id="b1">arrays</b>, seguido do índice entre colchetes ([ ]), para atribuir um novo valor.
+                    Resultado:
+                    Após substituir "feijão" por "camarão", o <b id="b1">arrays</b> ficará assim:
+                </h3>
+                <br>
+                <img src="resArray.png" alt="" style="width: 350px;">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="head3" id="head3">
+        <h1 style="padding: 30px;">
+            INSERÇÃO DE NOVOS ITENS
+        </h1>
+        <h2>
+            Como inserir novos itens em um <b id="b1">arrays</b> com JavaScript<br>
+            Existem várias formas de adicionar itens a um <b id="b1">arrays</b> no JavaScript. Aqui estão as mais comuns:<br>
+
+            Como substituir um item de um <b id="b1">arrays</b> com JavaScript<br>
+            Existem várias formas de adicionar itens a um <b id="b1">arrays</b> no JavaScript. Aqui estão as mais comuns:<br>
+        </h2>
+        <p>
+            1. Adicionar ao final do <b id="b1">arrays</b> com <b style="color: rgb(0, 255, 0);">.push( )</b><br>
+            A função <b style="color: rgb(0, 255, 0);">.push( )</b> insere novos itens no final do <b id="b1">arrays</b>.
+        </p>
+        <img src="pushArray.png" alt="" style="height: 175px;">
+        <p>
+            Resultado:<br>
+            <img src="resArray.png" alt="" style="width: 350px;">
+            <br>
+            <iframe src="https://www.youtube.com/embed/HNf8AhMa4f0?si=WSimpqTNddduF949" allowfullscreen></iframe>
+        </p>
+
+
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

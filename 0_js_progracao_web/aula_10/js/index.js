@@ -54,3 +54,57 @@ function onmouseup1(){
 function onmouseup2(){
     document.getElementById('g').style.backgroundColor = "black"
 }
+
+function limparSozinho(){
+    document.getElementById('areaTexto2').style.border = "10px solid green";
+    document.getElementById('areaTexto2').value = "";
+}
+
+let duasCores2 = false; //VARIAVEL PARA CONTROLAR A COR
+function mudou(){
+    const elemento = document.getElementById('i');
+    //ALTERA A COR COM BASE NA VARIAVEL DUASCORES
+    if (duasCores2){
+        elemento.style.backgroundColor = 'blueviolet';
+    }else{
+        elemento.style.backgroundColor = 'black'
+    }
+    duasCores2 = !duasCores2;
+}
+
+let duasCores3 = false; //VARIAVEL PARA CONTROLAR A COR
+function funcaoOnblur(){
+    const elemento = document.getElementById('j');
+    //ALTERA A COR COM BASE NA VARIAVEL DUASCORES
+    if (duasCores3){
+        elemento.style.backgroundColor = 'blueviolet';
+    }else{
+        elemento.style.backgroundColor = 'black'
+    }
+    duasCores3 = !duasCores3;
+}
+
+let duasCores4 = false; // Variável para controlar a cor
+
+function funcaoOnblur1(elemento) {
+    // Altera a cor do elemento que chamou a função
+    if (duasCores3) {
+        elemento.style.backgroundColor = 'blueviolet';
+    } else {
+        elemento.style.backgroundColor = 'black';
+    }
+    duasCores3 = !duasCores3; // Alterna a variável
+}
+
+
+let duasCores5 = false; //VARIAVEL PARA CONTROLAR A COR
+function onresize1(){
+    const elemento = document.getElementById('pagina');
+    //ALTERA A COR COM BASE NA VARIAVEL DUASCORES
+    if (duasCores5){
+        elemento.style.backgroundColor = 'blueviolet';
+    }else{
+        elemento.style.backgroundColor = 'black'
+    }
+    duasCores5 = !duasCores5;
+}
