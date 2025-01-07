@@ -26,3 +26,6 @@ function fecharAlert() {
 
 
 
+const frutas = ["Maçã", "Banana", "Laranja", "Abacaxi"];
+frutas[0]; /*"Maçã"*/
+frutas[2]; /*"Laranja"*/

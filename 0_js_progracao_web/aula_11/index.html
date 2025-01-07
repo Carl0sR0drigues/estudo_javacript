@@ -192,34 +192,60 @@
         <h1>
             Visualização de Item Específico no Array
         </h1>
-        <div style="display: flex; flex-direction: row;">
-            <div>
-                <h3 style="text-align: justify;">
-                    Em JavaScript, os arrays são usados para armazenar vários valores em uma única variável. Às vezes, você pode querer visualizar apenas um item específico em um array. Isso é feito acessando o índice do item. O índice começa em 0, ou seja, o primeiro elemento do array está na posição 0, o segundo na posição 1, e assim por diante.
-                </h3>
-                <p>
-                    <br>Exemplo Prático:
-                    <br>Se tivermos o seguinte array:
-                    <br style="line-height: 1.5;">
-                    <br><img src="visualizarItem.png" alt="" style="width: 350px;">
-                    <br>
-                    <br>
-                    const frutas = ["Maçã", "Banana", "Laranja", "Abacaxi"];
-                    <br>
-                    Para visualizar o primeiro item, usamos frutas[0], que retorna "Maçã".
-                    Para visualizar o terceiro item, usamos frutas[2], que retorna "Laranja".
-                </p>
-            </div>
+        <h3 style="text-align: justify;">
+            Em JavaScript, os arrays são usados para armazenar vários valores em uma única variável. 
+            Às vezes, você pode querer visualizar apenas um item específico em um array. Isso é feito acessando o índice do item. 
+            O índice começa em 0, ou seja, o primeiro elemento do array está na posição 0, o segundo na posição 1, e assim por diante.
+        </h3>
+        <p>
+            <br>Exemplo Prático:
+            <br>Se tivermos o seguinte array:
+            <br style="line-height: 1.5;">
+            <br><img src="visualizarItem.png" alt="" style="width: 350px;">
+            <p style="text-align: justify; line-height: 1.5;">
+                const frutas = ["Maçã", "Banana", "Laranja", "Abacaxi"];
+                <br>Para visualizar o primeiro item, usamos frutas[0], que retorna "Maçã".
+                <br>Para visualizar o terceiro item, usamos frutas[2], que retorna "Laranja".
+                <br>
+                <br>
+                <img src="buscaItem.png" alt="">
+                <p style="text-align: center; line-height: 0;">Codigo</p>
+            </p>
+        </p>
+    </div>
 
-            <div>
-                <h3 style="text-align: justify;">
-                    Em JavaScript, os arrays são usados para armazenar vários valores em uma única variável. Às vezes, você pode querer visualizar apenas um item específico em um array. Isso é feito acessando o índice do item. O índice começa em 0, ou seja, o primeiro elemento do array está na posição 0, o segundo na posição 1, e assim por diante.
-                </h3>
-                <p>
-                    <br>Exemplo Prático:
-                    <br>Se tivermos o seguinte array:
-                </p>
-            </div>
+    <div id="head5" class="head5">
+        <h1>
+            Visualização do Último Item de um Array
+        </h1>
+        <h3 style="text-align: justify;">
+            No JavaScript, para acessar o último item de um <b id="b1">Array</b>, você pode usar o índice negativo ou o comprimento do <b id="b1">Array</b>. Vamos ver como funciona:
+        </h3>
+    </div>
+
+    <div id="head6" class="head6">
+        <h1>
+            Confirmação se é um array
+        </h1>
+        <h3 style="text-align: justify; width: 90%;">
+            Como Confirmar se uma Variável é um <b id="b1">Array</b>?
+            Em JavaScript, para verificar se uma variável é um <b id="b1">array</b>, você pode usar o método nativo <b style="color: rgb(0, 255, 0);">Array.isArray()</b>. 
+            Ele retorna true se a variável for um <b id="b1">array</b>, ou false caso contrário.
+        </h3>
+        <div style="margin-top: 75px;">
+            <p>
+                Exemplo Simples:
+            </p>
+            <br>
+            <img src="confirmaArray.png" alt="">
+            <br>
+            <br>
+            <p>
+                Explicação
+                <br><b style="color: rgb(0, 255, 0);">Array.isArray()</b>: É o método mais confiável para verificar se uma variável é um <b id="b1">array</b>.
+                <br>Funciona mesmo se você estiver lidando com diferentes contextos (como objetos criados em outro escopo).
+                <br>Por que não usar typeof?: O operador typeof retorna "object" para <b id="b1">array</b>, o que pode ser confuso e não garante a identificação correta.
+            </p>
         </div>
     </div>
 
