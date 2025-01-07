@@ -8,6 +8,7 @@
     <title>Aula 11</title>
 </head>
 <body>
+    <a href="#indice" style="position: fixed; right: 25px; font-size: 75px; color: red; font-family: 'arial black'; bottom: 10px; text-decoration: none;">🔃</a>
     <div id="head">
         <h1>
             ARRAYS
@@ -46,19 +47,26 @@
             MANIPULAÇÃO DE ARRAY
         </h1>
         <br>
-        <h2>
+        <h2 id="indice">
             <p style="text-align: center;">Existe de varias formas de manipular um <b id="b1">arrays</b> entre elas falaremos de;</p>
-            <br>
             <br>
             <a href="#head2"><li id="a1">➡️ Substituição de itens</li></a>
             <br>
-            <a href="#head3"><li id="a1">➡️ Inserção novos itens</li></a>
+            <a href="#head3"><li id="a1">➡️ Inserção novos itens - Primeiro Metodo</li></a>
+            <br>
+            <a href="#head3_1"><li id="a1">➡️ Inserção novos itens - Segundo Metodo</li></a>
+            <br>
+            <a href="#head3_2"><li id="a1">➡️ Inserção novos itens - Terceiro Metodo</li></a>
+            <br>
+            <a href="#head3_3"><li id="a1">➡️ Inserção novos itens - Quarto Metodo</li></a>
             <br>
             <a href="#head4"><li id="a1">➡️ Visualização de item especifico</li></a>
             <br>
             <a href="#head5"><li id="a1">➡️ Visualização do ultimo item</li></a>
             <br>
             <a href="#head6"><li id="a1">➡️ Confirmação se é um array</li></a>
+            <br>
+            <a href="#video"><li id="a1">➡️ Video aula array</li></a>
         </h2>
     </div>
     
@@ -100,19 +108,17 @@
         </div>
     </div>
 
-
-
     <div class="head3" id="head3">
         <h1 style="padding: 30px;">
             INSERÇÃO DE NOVOS ITENS
         </h1>
-        <h2>
+        <h3>
             Como inserir novos itens em um <b id="b1">arrays</b> com JavaScript<br>
-            Existem várias formas de adicionar itens a um <b id="b1">arrays</b> no JavaScript. Aqui estão as mais comuns:<br>
-
-            Como substituir um item de um <b id="b1">arrays</b> com JavaScript<br>
-            Existem várias formas de adicionar itens a um <b id="b1">arrays</b> no JavaScript. Aqui estão as mais comuns:<br>
-        </h2>
+            Existem várias formas de adicionar itens a um <b id="b1">arrays</b> no JavaScript.
+            <br>Aqui estão as quatro mais comuns:
+        </h3>
+        <br>
+        <h3 style="color: blueviolet; font-size: 25px;">Primeiro Metodo</h3>
         <p>
             1. Adicionar ao final do <b id="b1">arrays</b> com <b style="color: rgb(0, 255, 0);">.push( )</b><br>
             A função <b style="color: rgb(0, 255, 0);">.push( )</b> insere novos itens no final do <b id="b1">arrays</b>.
@@ -122,14 +128,39 @@
             Resultado:<br>
             <img src="resArray.png" alt="" style="width: 350px;">
             <br>
-            <iframe src="https://www.youtube.com/embed/HNf8AhMa4f0?si=WSimpqTNddduF949" allowfullscreen></iframe>
         </p>
+    </div>
 
-
+    <div class="head3_1" id="head3_1">
+        <h1 style="padding: 30px;">
+            INSERÇÃO DE NOVOS ITENS
+        </h1>
+        <h3>
+            Como inserir novos itens em um <b id="b1">arrays</b> com JavaScript<br>
+            Existem várias formas de adicionar itens a um <b id="b1">arrays</b> no JavaScript.
+            <br>Aqui estão as quatro mais comuns:
+        </h3>
+        <br>
+        <h3 style="color: blueviolet; font-size: 25px;">Segundo Metodo</h3>
+        <p>
+            1. Adicionar ao final do <b id="b1">arrays</b> com <b style="color: rgb(0, 255, 0);">.push( )</b><br>
+            A função <b style="color: rgb(0, 255, 0);">.push( )</b> insere novos itens no final do <b id="b1">arrays</b>.
+        </p>
+        <img src="pushArray.png" alt="" style="height: 175px;">
+        <p>
+            Resultado:<br>
+            <img src="resArray.png" alt="" style="width: 350px;">
+            <br>
+        </p>
     </div>
 
 
 
+
+    <div id="video" style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; height: 100vh; margin: auto;">
+        <a href="https://www.youtube.com/@programacaoweb" style="text-decoration: none; font-family: 'arial';"><p style="color: rgb(255, 0, 0);">Aula de <b>arrays</b> do canal Progarmação Web com Dimitri Teixeira</p></a>
+        <iframe src="https://www.youtube.com/embed/HNf8AhMa4f0?si=WSimpqTNddduF949" allowfullscreen style="width: 90%; height: 90%; border: 5px solid rgb(255, 0, 0);"></iframe>
+    </div>
     <script src="js/index.js"></script>
 </body>
 </html>
