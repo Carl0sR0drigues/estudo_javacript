@@ -52,13 +52,9 @@
             <br>
             <a href="#head2"><li id="a1">➡️ Substituição de itens</li></a>
             <br>
-            <a href="#head3"><li id="a1">➡️ Inserção novos itens - Primeiro Metodo</li></a>
+            <a href="#head3"><li id="a1">➡️ Inserção novos itens - Primeiro e Segundo Metodo</li></a>
             <br>
-            <a href="#head3_1"><li id="a1">➡️ Inserção novos itens - Segundo Metodo</li></a>
-            <br>
-            <a href="#head3_2"><li id="a1">➡️ Inserção novos itens - Terceiro Metodo</li></a>
-            <br>
-            <a href="#head3_3"><li id="a1">➡️ Inserção novos itens - Quarto Metodo</li></a>
+            <a href="#head3_1"><li id="a1">➡️ Inserção novos itens - Terceiro e Quarto Metodo</li></a>
             <br>
             <a href="#head4"><li id="a1">➡️ Visualização de item especifico</li></a>
             <br>
@@ -117,41 +113,114 @@
             Existem várias formas de adicionar itens a um <b id="b1">arrays</b> no JavaScript.
             <br>Aqui estão as quatro mais comuns:
         </h3>
-        <br>
-        <h3 style="color: blueviolet; font-size: 25px;">Primeiro Metodo</h3>
-        <p>
-            1. Adicionar ao final do <b id="b1">arrays</b> com <b style="color: rgb(0, 255, 0);">.push( )</b><br>
-            A função <b style="color: rgb(0, 255, 0);">.push( )</b> insere novos itens no final do <b id="b1">arrays</b>.
-        </p>
-        <img src="pushArray.png" alt="" style="height: 175px;">
-        <p>
-            Resultado:<br>
-            <img src="resArray.png" alt="" style="width: 350px;">
-            <br>
-        </p>
+        <div style="display: flex;">
+            <div style="margin: 25px; width: 75%;">
+                <h3 style="color: blueviolet; font-size: 25px;">Primeiro Metodo</h3>
+                <p>
+                    Adicionar ao final do <b id="b1">arrays</b> com <b style="color: rgb(0, 255, 0);">.push( )</b><br>
+                    A função <b style="color: rgb(0, 255, 0);">.push( )</b> insere novos itens no final do <b id="b1">arrays</b>.
+                    <br>Exemplo:
+                </p>
+                <img src="pushArray.png" alt="" style="height: 175px;">
+                <p>
+                    Resultado:<br>
+                    <img src="resArray.png" alt="" style="width: 350px;">
+                    <br>
+                </p>
+            </div>
+
+            <div style="margin: 25px; width: 75%;">
+                <h3 style="color: blueviolet; font-size: 25px;">Segundo Metodo</h3>
+                <p>
+                    Adicionar ao início do <b id="b1">array</b> com <b style="color: rgb(0, 255, 0);">.unshift()</b>
+                    <br>A função <b style="color: rgb(0, 255, 0);">.unshift()</b> insere novos itens no início do <b id="b1">array</b>.
+                    <br>Exemplo:
+                </p>
+                <img src="unshift.png" alt="" style="height: 175px;">
+                <p>
+                    Resultado:<br>
+                    <img src="resUnshift.png" alt="" style="width: 350px;">
+                    <br>
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="head3_1" id="head3_1">
         <h1 style="padding: 30px;">
             INSERÇÃO DE NOVOS ITENS
         </h1>
-        <h3>
-            Como inserir novos itens em um <b id="b1">arrays</b> com JavaScript<br>
-            Existem várias formas de adicionar itens a um <b id="b1">arrays</b> no JavaScript.
-            <br>Aqui estão as quatro mais comuns:
-        </h3>
-        <br>
-        <h3 style="color: blueviolet; font-size: 25px;">Segundo Metodo</h3>
-        <p>
-            1. Adicionar ao final do <b id="b1">arrays</b> com <b style="color: rgb(0, 255, 0);">.push( )</b><br>
-            A função <b style="color: rgb(0, 255, 0);">.push( )</b> insere novos itens no final do <b id="b1">arrays</b>.
+        <div style="display: flex;">
+            <div style="margin: 25px; width: 75%;">
+                <h3 style="color: blueviolet; font-size: 25px;">Terceiro Metodo</h3>
+                <p>
+                    Adicionar em uma posição específica com <b style="color: rgb(0, 255, 0);">.splice()</b>.
+                    <br>A função <b style="color: rgb(0, 255, 0);">.splice()</b> permite inserir itens em qualquer posição determinado pelo desenvolvedor do <b id="b1">array</b>.
+                    <br>Exemplo:
+                </p>
+                <img src="splice.png" alt="" style="height: 175px;">
+                <p>
+                    Resultado:<br>
+                    <img src="resSplice.png" alt="" style="width: 350px;">
+                    <br>
+                </p>
+            </div>
+
+            <div style="margin: 25px; width: 75%;">
+                <h3 style="color: blueviolet; font-size: 25px;">Quarto Metodo</h3>
+                <p>
+                    Adicionar múltiplos itens de uma vez
+                    A função <b style="color: rgb(0, 255, 0);">.push()</b> permite não somente inserir novos itens no final do <b id="b1">array</b>, mas também permite adicionar vários itens usando <b style="color: rgb(0, 255, 0);">.push()</b>.
+                    <br>Exemplo:
+                </p>
+                <img src="push2.png" alt="" style="height: 175px;">
+                <p>
+                    Resultado:<br>
+                    <img src="resPush2.png" alt="" style="width: 350px;">
+                    <br>
+                </p>
+            </div>
+        </div>
+        <p style="color: white;">
+            💡 Dica:
+            Para verificar o tamanho do array após a inserção, use array.length.
+            Teste os métodos no console do navegador ou em seu código para entender melhor!
         </p>
-        <img src="pushArray.png" alt="" style="height: 175px;">
-        <p>
-            Resultado:<br>
-            <img src="resArray.png" alt="" style="width: 350px;">
-            <br>
-        </p>
+    </div>
+
+    <div id="head4" class="head4">
+        <h1>
+            Visualização de Item Específico no Array
+        </h1>
+        <div style="display: flex; flex-direction: row;">
+            <div>
+                <h3 style="text-align: justify;">
+                    Em JavaScript, os arrays são usados para armazenar vários valores em uma única variável. Às vezes, você pode querer visualizar apenas um item específico em um array. Isso é feito acessando o índice do item. O índice começa em 0, ou seja, o primeiro elemento do array está na posição 0, o segundo na posição 1, e assim por diante.
+                </h3>
+                <p>
+                    <br>Exemplo Prático:
+                    <br>Se tivermos o seguinte array:
+                    <br style="line-height: 1.5;">
+                    <br><img src="visualizarItem.png" alt="" style="width: 350px;">
+                    <br>
+                    <br>
+                    const frutas = ["Maçã", "Banana", "Laranja", "Abacaxi"];
+                    <br>
+                    Para visualizar o primeiro item, usamos frutas[0], que retorna "Maçã".
+                    Para visualizar o terceiro item, usamos frutas[2], que retorna "Laranja".
+                </p>
+            </div>
+
+            <div>
+                <h3 style="text-align: justify;">
+                    Em JavaScript, os arrays são usados para armazenar vários valores em uma única variável. Às vezes, você pode querer visualizar apenas um item específico em um array. Isso é feito acessando o índice do item. O índice começa em 0, ou seja, o primeiro elemento do array está na posição 0, o segundo na posição 1, e assim por diante.
+                </h3>
+                <p>
+                    <br>Exemplo Prático:
+                    <br>Se tivermos o seguinte array:
+                </p>
+            </div>
+        </div>
     </div>
 
 
