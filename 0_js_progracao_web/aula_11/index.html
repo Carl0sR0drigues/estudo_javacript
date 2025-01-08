@@ -47,22 +47,37 @@
             MANIPULAÇÃO DE ARRAY
         </h1>
         <br>
-        <h2 id="indice">
+        <h2 id="indice" >
             <p style="text-align: center;">Existe de varias formas de manipular um <b id="b1">arrays</b> entre elas falaremos de;</p>
             <br>
-            <a href="#head2"><li id="a1">➡️ Substituição de itens</li></a>
-            <br>
-            <a href="#head3"><li id="a1">➡️ Inserção novos itens - Primeiro e Segundo Metodo</li></a>
-            <br>
-            <a href="#head3_1"><li id="a1">➡️ Inserção novos itens - Terceiro e Quarto Metodo</li></a>
-            <br>
-            <a href="#head4"><li id="a1">➡️ Visualização de item especifico</li></a>
-            <br>
-            <a href="#head5"><li id="a1">➡️ Visualização do ultimo item</li></a>
-            <br>
-            <a href="#head6"><li id="a1">➡️ Confirmação se é um array</li></a>
-            <br>
-            <a href="#video"><li id="a1">➡️ Video aula array</li></a>
+            <div style="display: flex;">
+                <div style="height: 100%; width: 50%; border: 2px solid red;">
+                    <a href="#head2">➡️ Substituição de itens</a>
+                    <br><br>
+                    <a href="#head3">➡️ Métodos Para Arrays - Push Unitario e Unshift</a>
+                    <br><br>
+                    <a href="#head3_1">➡️ Métodos Para Arrays - Splice e Push Multiplos</a>
+                    <br><br>
+                    <a href="#head3_1">➡️ Métodos Para Arrays - Join e Pop</a>
+                    <br><br>
+                    <a href="#head3_1">➡️ Métodos Para Arrays - Delete e Concat</a>
+                    <br><br>
+                    <a href="#head3_1">➡️ Métodos Para Arrays - Sort e 6</a>
+                </div>
+                <div style="width: 50%; border: 2px solid red;">
+                    <a href="#head3_1">➡️ Métodos Para Arrays - 7 e 8</a>
+                    <br><br>
+                    <a href="#head3_1">➡️ Métodos Para Arrays - 9 e 10</a>
+                    <br><br>
+                    <a href="#head4">➡️ Visualização de item especifico</a>
+                    <br><br>
+                    <a href="#head5">➡️ Visualização do ultimo item</a>
+                    <br><br>
+                    <a href="#head6">➡️ Confirmação se é um array</a>
+                    <br><br>
+                    <a href="#video">➡️ Video aula array</a>
+                </div>
+            </div>
         </h2>
     </div>
     
@@ -71,7 +86,7 @@
             SUBSTITUIÇÃO DE ITENS
         </h1>
         <div style="display: flex; flex-direction: row; text-align: center;">
-            <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+            <div style="width: 50%; display: flex; flex-direction: column; align-items: center; margin: 10px;">
                 <h3>
                     Como substituir um item de um <b id="b1">arrays</b> com JavaScript.
                     <br>Substituir um item em um <b id="b1">arrays</b> é muito simples!
@@ -83,7 +98,7 @@
                 <p style="padding: 5px;">Código:</p>
                 <img src="substituiçãoArray.png" alt="" style="height: 175px;">
             </div>
-            <div style="width: 50%; display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 50%; display: flex; flex-direction: column; align-items: center; text-align: center; margin: 10px;">
                 <h3 style="text-align: justify;">
                     Explicação:<b id="b1"></b>
                     <br><br>Cada item em um <b id="b1">arrays</b> tem uma posição (também chamada de índice), que começa do número 0.
@@ -106,7 +121,7 @@
 
     <div class="head3" id="head3">
         <h1 style="padding: 30px;">
-            INSERÇÃO DE NOVOS ITENS
+            METODOS PARA ARRAYS
         </h1>
         <h3>
             Como inserir novos itens em um <b id="b1">arrays</b> com JavaScript<br>
@@ -115,7 +130,7 @@
         </h3>
         <div style="display: flex;">
             <div style="margin: 25px; width: 75%;">
-                <h3 style="color: blueviolet; font-size: 25px;">Primeiro Metodo</h3>
+                <h3 style="color: blueviolet; font-size: 25px;">PUSH UNITARIO</h3>
                 <p>
                     Adicionar ao final do <b id="b1">arrays</b> com <b style="color: rgb(0, 255, 0);">.push( )</b><br>
                     A função <b style="color: rgb(0, 255, 0);">.push( )</b> insere novos itens no final do <b id="b1">arrays</b>.
@@ -130,7 +145,7 @@
             </div>
 
             <div style="margin: 25px; width: 75%;">
-                <h3 style="color: blueviolet; font-size: 25px;">Segundo Metodo</h3>
+                <h3 style="color: blueviolet; font-size: 25px;">UNSHIFT</h3>
                 <p>
                     Adicionar ao início do <b id="b1">array</b> com <b style="color: rgb(0, 255, 0);">.unshift()</b>
                     <br>A função <b style="color: rgb(0, 255, 0);">.unshift()</b> insere novos itens no início do <b id="b1">array</b>.
@@ -148,11 +163,11 @@
 
     <div class="head3_1" id="head3_1">
         <h1 style="padding: 30px;">
-            INSERÇÃO DE NOVOS ITENS
+            METODOS PARA ARRAYS
         </h1>
         <div style="display: flex;">
             <div style="margin: 25px; width: 75%;">
-                <h3 style="color: blueviolet; font-size: 25px;">Terceiro Metodo</h3>
+                <h3 style="color: blueviolet; font-size: 25px;">SPLICE</h3>
                 <p>
                     Adicionar em uma posição específica com <b style="color: rgb(0, 255, 0);">.splice()</b>.
                     <br>A função <b style="color: rgb(0, 255, 0);">.splice()</b> permite inserir itens em qualquer posição determinado pelo desenvolvedor do <b id="b1">array</b>.
@@ -167,7 +182,7 @@
             </div>
 
             <div style="margin: 25px; width: 75%;">
-                <h3 style="color: blueviolet; font-size: 25px;">Quarto Metodo</h3>
+                <h3 style="color: blueviolet; font-size: 25px;">PUSH MULTIPLOS</h3>
                 <p>
                     Adicionar múltiplos itens de uma vez
                     A função <b style="color: rgb(0, 255, 0);">.push()</b> permite não somente inserir novos itens no final do <b id="b1">array</b>, mas também permite adicionar vários itens usando <b style="color: rgb(0, 255, 0);">.push()</b>.
@@ -221,15 +236,32 @@
         <h3 style="text-align: justify;">
             No JavaScript, para acessar o último item de um <b id="b1">Array</b>, você pode usar o índice negativo ou o comprimento do <b id="b1">Array</b>. Vamos ver como funciona:
         </h3>
-        <div>
-            <div>
-
+        
+        <div style="display: flex;">
+            <div style="margin: 25px; margin-top: 75px; width: 50%;">
+                <h3 style="color: blueviolet; font-size: 25px;">Métodos .length</h3>
+                <p>
+                    Usando o Comprimento do <b id="b1">array</b> <b style="color: rgb(0, 255, 0);">.length</b> O índice do último item é sempre igual ao comprimento do <b id="b1">array</b> menos 1.
+                </p>
+                <br>
+                <img src="length.png" alt="" style="height: 175px;  max-width: 60%; height: 60%;">
             </div>
 
-            <div>
-                
+            <div style="margin: 25px; margin-top: 75px; width: 50%;">
+                <h3 style="color: blueviolet; font-size: 25px;">Métodos .at()</h3>
+                <p>
+                    Usando o Método <b style="color: rgb(0, 255, 0);">.at()</b> (Introduzido no ES2022): O índice negativo permite acessar os elementos de trás para frente em um <b id="b1">array</b>.
+                </p>
+                <br>
+                <img src="at().png" alt="" style="height: 175px;  max-width: 60%; height: 60%;">
+                <b style="color: rgb(0, 255, 0);"></b>
             </div>
         </div>
+        <p style="color: white; margin-top: 100px;">
+            Benefícios de Cada Método:
+            <br>.length - 1: Compatível com todas as versões do JavaScript.
+            <br>.at(-1): Mais legível e prático, mas requer suporte a ES2022+.
+        </p>
     </div>
 
     <div id="head6" class="head6">
