@@ -43,41 +43,36 @@
     </div>
 
     <div id="head">
-        <h1 style="padding: 50px;">
+        <h1 id="indice" style="padding: 25px;">
             MANIPULAÇÃO DE ARRAY
         </h1>
+        <p style="text-align: center;">Existe de varias formas de manipular um <b id="b1">arrays</b> entre elas falaremos de;</p>
         <br>
-        <h2 id="indice" >
-            <p style="text-align: center;">Existe de varias formas de manipular um <b id="b1">arrays</b> entre elas falaremos de;</p>
+        <br>
+        <h2 id="indice" style=" line-height: 40px; margin-left: 375px;">
+            <a href="#head2">➡️ Substituição de itens</a>
             <br>
-            <div style="display: flex;">
-                <div style="height: 100%; width: 50%; border: 2px solid red;">
-                    <a href="#head2">➡️ Substituição de itens</a>
-                    <br><br>
-                    <a href="#head3">➡️ Métodos Para Arrays - Push Unitario e Unshift</a>
-                    <br><br>
-                    <a href="#head3_1">➡️ Métodos Para Arrays - Splice e Push Multiplos</a>
-                    <br><br>
-                    <a href="#head3_1">➡️ Métodos Para Arrays - Join e Pop</a>
-                    <br><br>
-                    <a href="#head3_1">➡️ Métodos Para Arrays - Delete e Concat</a>
-                    <br><br>
-                    <a href="#head3_1">➡️ Métodos Para Arrays - Sort e 6</a>
-                </div>
-                <div style="width: 50%; border: 2px solid red;">
-                    <a href="#head3_1">➡️ Métodos Para Arrays - 7 e 8</a>
-                    <br><br>
-                    <a href="#head3_1">➡️ Métodos Para Arrays - 9 e 10</a>
-                    <br><br>
-                    <a href="#head4">➡️ Visualização de item especifico</a>
-                    <br><br>
-                    <a href="#head5">➡️ Visualização do ultimo item</a>
-                    <br><br>
-                    <a href="#head6">➡️ Confirmação se é um array</a>
-                    <br><br>
-                    <a href="#video">➡️ Video aula array</a>
-                </div>
-            </div>
+            <a href="#head3">➡️ Métodos Para Arrays - Push Unitario e Unshift</a>
+            <br>
+            <a href="#head3_1">➡️ Métodos Para Arrays - Splice e Push Multiplos</a>
+            <br>
+            <a href="#head3_2">➡️ Métodos Para Arrays - Join e Pop</a>
+            <br>
+            <a href="#head3_3">➡️ Métodos Para Arrays - Delete e Concat</a>
+            <br>
+            <a href="#head3_4">➡️ Métodos Para Arrays - Sort e 6</a>
+            <br>
+            <a href="#head3_5">➡️ Métodos Para Arrays - 7 e 8</a>
+            <br>
+            <a href="#head3_6">➡️ Métodos Para Arrays - 9 e 10</a>
+            <br>
+            <a href="#head4">➡️ Visualização de item especifico</a>
+            <br>
+            <a href="#head5">➡️ Visualização do ultimo item</a>
+            <br>
+            <a href="#head6">➡️ Confirmação se é um array</a>
+            <br>
+            <a href="#video">➡️ Video aula array</a>
         </h2>
     </div>
     
@@ -121,7 +116,7 @@
 
     <div class="head3" id="head3">
         <h1 style="padding: 30px;">
-            METODOS PARA ARRAYS
+            METODOS PUSH UNITARIO & UNSHIFT
         </h1>
         <h3>
             Como inserir novos itens em um <b id="b1">arrays</b> com JavaScript<br>
@@ -163,7 +158,7 @@
 
     <div class="head3_1" id="head3_1">
         <h1 style="padding: 30px;">
-            METODOS PARA ARRAYS
+            METODOS SPLICE & PUSH MULTIPLOS
         </h1>
         <div style="display: flex;">
             <div style="margin: 25px; width: 75%;">
@@ -202,6 +197,140 @@
             Teste os métodos no console do navegador ou em seu código para entender melhor!
         </p>
     </div>
+    
+    <div class="head3_2" id="head3_2">
+        <h1 style="padding: 30px; text-transform: uppercase;">Metodos Join & Pop</h1>
+        <div style="display: flex;">
+            <div style="width: 50%; margin-right: 20px;">
+                <h3 style="color: blueviolet; font-size: 25px;">JOIN</h3>
+                <p>
+                    O método <b style="color: rgb(0, 255, 0);">.join( )</b> no JavaScript é usado para combinar todos os elementos de um <b id="b1">array</b> em uma única string.
+                    <br>Ele permite especificar um separador personalizado para os itens, como uma vírgula, espaço, hífen, ou qualquer outro caractere.
+                    <br><b>Sintaxe Básica:</b>
+                    <br><code style="color: white;">array.<b style="color: rgb(0, 255, 0);">join</b>(separador);</code>
+                    <br>Exemplo Simples:
+                    <img src="joinSimples.png" alt="" style="height: 125px; width: 550px;">
+                </p>
+                <p>Separador Personalizado:</p>
+                <img src="joinSeparadorPerson.png" alt="" style="height: 75px; width: 550px;">
+                <p>
+                    Benefícios do Método join<br>
+                    Útil para converter arrays em strings formatadas.
+                    Pode ser usado para criar listas, mensagens personalizadas, ou até mesmo gerar códigos complexos a partir de arrays.
+                </p>
+            </div>
+
+            <div style="width: 50%; margin-left: 20px;">
+                <h3 style="color: blueviolet; font-size: 25px;">POP</h3>
+                <p>
+                    O método <b style="color: rgb(0, 255, 0);">.pop( )</b> no JavaScript é usado para remover o último elemento de um <b id="b1">array</b>. Esse método altera o array original, reduzindo seu tamanho em um elemento.
+                    Além disso, ele retorna o valor do elemento removido, permitindo que você o utilize ou armazene em outra variável, se necessário.
+                    <br><b>Sintaxe Básica:</b>
+                    <br><code style="color: white;">array.<b style="color: rgb(0, 255, 0);">pop</b>( );</code>
+                    <br>Exemplo Simples:
+                    
+                    <img src="popSimples.png" alt="" style="height: 100px; width: 550px;">
+                    
+                    
+                <p>
+                    Quando usar o <b style="color: rgb(0, 255, 0);">.pop( )</b>?<br>
+                </p>
+                <p style="text-align: justify; font-size: 20px;">
+                    Destrutivo: Ele altera o <b id="b1">array</b> original, removendo o último elemento.
+                    <br>Retorno: Retorna o elemento que foi removido.
+                    <br>Sem Parâmetros: O <b style="color: rgb(0, 255, 0);">.pop( )</b> não aceita argumentos; ele remove sempre o último elemento.
+                </p>
+                
+                <p>
+                    Características do <b style="color: rgb(0, 255, 0);">.pop( )</b>?
+                </p>
+                <p style="text-align: justify; font-size: 20px;">
+                        <span style="color: white;">✅</span>Fácil de usar para manipular listas dinâmicas.
+                    <br><span style="color: white;">✅</span>Útil em situações onde o último item do array não é mais necessário.
+                    <br><span style="color: white;">✅</span>Combinado com outros métodos, ajuda em manipulações complexas de arrays.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="head3_3" id="head3_3">
+        <h1 style="padding: 30px; text-transform: uppercase;">Metodos Delete & Concat</h1>
+        <div style="display: flex;">
+            <div style="width: 50%; margin-right: 20px;">
+                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
+                <p>XXXXXXXXXXXXXXXX</p>
+                <img src="" alt="">
+                <p></p>
+            </div>
+
+            <div style="width: 50%; margin-right: 20px;">
+                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
+                <p>XXXXXXXXXXXXXXXXXX</p>
+                <img src="" alt="">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="head3_4" id="head3_4">
+        <h1 style="padding: 30px; text-transform: uppercase;">Metodos Sort & 6</h1>
+        <div style="display: flex;">
+            <div style="width: 50%; margin-right: 20px;">
+                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
+                <p>XXXXXXXXXXXXXXXX</p>
+                <img src="" alt="">
+                <p></p>
+            </div>
+
+            <div style="width: 50%; margin-right: 20px;">
+                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
+                <p>XXXXXXXXXXXXXXXXXX</p>
+                <img src="" alt="">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="head3_5" id="head3_5">
+        <h1 style="padding: 30px; text-transform: uppercase;">Metodos 7 & 8</h1>
+        <div style="display: flex;">
+            <div style="width: 50%; margin-right: 20px;">
+                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
+                <p>XXXXXXXXXXXXXXXX</p>
+                <img src="" alt="">
+                <p></p>
+            </div>
+
+            <div style="width: 50%; margin-right: 20px;">
+                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
+                <p>XXXXXXXXXXXXXXXXXX</p>
+                <img src="" alt="">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="head3_6" id="head3_6">
+        <h1 style="padding: 30px; text-transform: uppercase;">Metodos 9 & 10</h1>
+        <div style="display: flex;">
+            <div style="width: 50%; margin-right: 20px;">
+                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
+                <p>XXXXXXXXXXXXXXXX</p>
+                <img src="" alt="">
+                <p></p>
+            </div>
+
+            <div style="width: 50%; margin-right: 20px;">
+                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
+                <p>XXXXXXXXXXXXXXXXXX</p>
+                <img src="" alt="">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <div id="head4" class="head4">
         <h1>
@@ -239,7 +368,7 @@
         
         <div style="display: flex;">
             <div style="margin: 25px; margin-top: 75px; width: 50%;">
-                <h3 style="color: blueviolet; font-size: 25px;">Métodos .length</h3>
+                <h3 style="color: blueviolet; font-size: 25px;">LENGTH</h3>
                 <p>
                     Usando o Comprimento do <b id="b1">array</b> <b style="color: rgb(0, 255, 0);">.length</b> O índice do último item é sempre igual ao comprimento do <b id="b1">array</b> menos 1.
                 </p>
@@ -248,7 +377,7 @@
             </div>
 
             <div style="margin: 25px; margin-top: 75px; width: 50%;">
-                <h3 style="color: blueviolet; font-size: 25px;">Métodos .at()</h3>
+                <h3 style="color: blueviolet; font-size: 25px;">AT( )</h3>
                 <p>
                     Usando o Método <b style="color: rgb(0, 255, 0);">.at()</b> (Introduzido no ES2022): O índice negativo permite acessar os elementos de trás para frente em um <b id="b1">array</b>.
                 </p>
@@ -289,6 +418,8 @@
             </p>
         </div>
     </div>
+
+    
 
 
 
