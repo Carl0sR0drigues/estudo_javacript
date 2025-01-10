@@ -60,17 +60,19 @@
             <br>
             <a href="#head3_3">➡️ Métodos Para Arrays - Delete e Concat</a>
             <br>
-            <a href="#head3_4">➡️ Métodos Para Arrays - Sort e 6</a>
-            <br>
-            <a href="#head3_5">➡️ Métodos Para Arrays - 7 e 8</a>
-            <br>
-            <a href="#head3_6">➡️ Métodos Para Arrays - 9 e 10</a>
+            <a href="#head3_4">➡️ Métodos Para Arrays - Sort</a>
             <br>
             <a href="#head4">➡️ Visualização de item especifico</a>
             <br>
             <a href="#head5">➡️ Visualização do ultimo item</a>
             <br>
             <a href="#head6">➡️ Confirmação se é um array</a>
+            <br>
+            <a href="#head7">➡️ Maior numero do array</a>
+            <br>
+            <a href="#head8">➡️ Memor numero do array</a>
+            <br>
+            <a href="#head9">➡️ Filtragem de numero do array</a>
             <br>
             <a href="#video">➡️ Video aula array</a>
         </h2>
@@ -308,64 +310,42 @@
     </div>
     
     <div class="head3_4" id="head3_4">
-        <h1 style="padding: 30px; text-transform: uppercase;">Metodos Sort & 6</h1>
-        <div style="display: flex;">
-            <div style="width: 50%; margin-right: 20px;">
-                <h3 style="color: blueviolet; font-size: 25px;">SORT</h3>
-                <p>XXXXXXXXXXXXXXXX</p>
-                <img src="" alt="">
-                <p></p>
-            </div>
-
-            <div style="width: 50%; margin-right: 20px;">
-                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
-                <p>XXXXXXXXXXXXXXXXXX</p>
-                <img src="" alt="">
-                <p></p>
-            </div>
+        <h1 style="padding: 30px; text-transform: uppercase; margin: 0px; padding: 0px;">Metodos Sort & 6</h1>
+        <div style="width: 100%; margin-top: 0px;">
+            <h3 style="color: blueviolet; font-size: 25px; margin-top: 0px;">SORT</h3>
+            <h3 style="text-align: justify; margin: 20px; margin-bottom: 0px;">
+                O método sort é utilizado para ordenar os elementos de um array. 
+                Por padrão, ele converte os elementos em strings e os organiza em ordem alfabética ou lexicográfica, mas pode ser personalizado para realizar outras formas de ordenação usando uma função de comparação.
+                <br>Características do sort:
+                <br>Uso Geral:
+                <br><span style="color: white;">🔸</span>Organiza os elementos do array no próprio array (modifica o original).
+                <br><br>Sintaxe: <code style="color: white;">array.<b style="color: rgb(0, 255, 0);">sort</b>([funçãoDeComparação]);</code>
+                <br>Por padrão:
+                <br><span style="color: white;">🔸</span>Ordena elementos como strings em ordem crescente.
+                <br><span style="color: white;">🔸</span>Pode gerar resultados inesperados para números.
+                <br>Customização:
+                <br><span style="color: white;">🔸</span>Use uma função de comparação para definir regras de ordenação, como números em ordem crescente ou decrescente.
+            </h3>
+            <br>
+            <span style=" display: flex;">
+                <span style="width: 50%; margin-left: 20px; height: 300px;">
+                    <p>Exemplo Básico (Ordem Alfabética):</p>
+                    <img src="sortAlfa.png" alt="">
+                </span>
+                <span style="width: 50%; margin-left: 20px; height: 300px;">
+                    <p>Exemplo com Números (Usando Função de Comparação):</p>
+                    <img src="sortFun.png" alt="">
+                </span>
+            </span>
+            <p>
+                <br>Quando Usar sort?
+                <br>Quando você precisa ordenar elementos em um array, como nomes, números ou objetos.
+                <br>Em aplicações onde a apresentação ordenada dos dados é importante.
+            </p>
+            <br>
+            <br>
         </div>
     </div>
-    
-    <div class="head3_5" id="head3_5">
-        <h1 style="padding: 30px; text-transform: uppercase;">Metodos 7 & 8</h1>
-        <div style="display: flex;">
-            <div style="width: 50%; margin-right: 20px;">
-                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
-                <p>XXXXXXXXXXXXXXXX</p>
-                <img src="" alt="">
-                <p></p>
-            </div>
-
-            <div style="width: 50%; margin-right: 20px;">
-                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
-                <p>XXXXXXXXXXXXXXXXXX</p>
-                <img src="" alt="">
-                <p></p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="head3_6" id="head3_6">
-        <h1 style="padding: 30px; text-transform: uppercase;">Metodos 9 & 10</h1>
-        <div style="display: flex;">
-            <div style="width: 50%; margin-right: 20px;">
-                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
-                <p>XXXXXXXXXXXXXXXX</p>
-                <img src="" alt="">
-                <p></p>
-            </div>
-
-            <div style="width: 50%; margin-right: 20px;">
-                <h3 style="color: blueviolet; font-size: 25px;">XXXXXXXXXX</h3>
-                <p>XXXXXXXXXXXXXXXXXX</p>
-                <img src="" alt="">
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-
-
 
     <div id="head4" class="head4">
         <h1>
@@ -453,6 +433,71 @@
             </p>
         </div>
     </div>
+
+    
+    <div id="head7" class="head7">
+        <h3 style="color: blueviolet; font-size: 25px;">MAIOR NUMERO DO ARRAY</h3>
+        <h3 style="text-align: justify; margin-top: 25px;  max-width: 80%;">
+            Para encontrar o maior número em um array, você pode utilizar diferentes abordagens no JavaScript, dependendo do contexto. Aqui estão algumas das maneiras mais comuns:
+        </h3>
+        <p style="max-width: 80%;">
+            <br><b style="color: white;">1️⃣</b>. Usando o Método <b style="color: rgb(0, 255, 0);">Math.max</b> e o Operador ... (Spread Operator)
+            <br>O método <b style="color: rgb(0, 255, 0);">Math.max</b> retorna o maior valor entre os números passados como argumentos. Com o spread operator (...), você pode espalhar os elementos de um array para usá-los como argumentos.
+        </p>
+        <br>
+        <img src="Mathmax.png" alt="">
+        <br>
+        <p><b style="color: white;">2️⃣</b>.  Usando um Loop <b style="color: rgb(0, 255, 0);">for</b>
+            <br>Um método clássico para encontrar o maior número é iterar pelo <b id="b1">array</b> usando um loop.</p>
+        <img src="MaxFor.png" alt="" style="width: 450px;">
+        <br>
+        <p><b style="color: white;">3️⃣</b>. Usando o Método <b style="color: rgb(0, 255, 0);">reduce</b>
+            <br>O método reduce permite processar cada elemento do  <b id="b1">array</b> para encontrar o maior número.</p>
+        <img src="MaxFor.png" alt="" style="width: 450px;">
+        <p style="color: white;">
+            <br>Quando Usar Cada Método?
+            <br>
+            <br>Math.max com Spread Operator:
+            Rápido e eficiente para arrays pequenos a médios.
+            <br>
+            <br>
+            Loop for:
+            Útil para aprendizado e controle total da lógica.
+            <br>
+            <br>
+            reduce:
+            Ideal para aplicações funcionais e arrays grandes.
+        </p>
+    </div>
+
+    <div id="head8" class="head8">
+        <h3 style="color: blueviolet; font-size: 25px;">MENOR NUMERO DO ARRAY</h3>
+        <h3 style="text-align: justify; margin-top: 25px;  max-width: 80%;">
+            
+        </h3>
+
+        <p></p>
+        <img src="r.png" alt="" style="width: 450px;">
+        <p></p>
+        <img src="a.png" alt="" style="width: 450px;">
+
+        <p style="color: white;"></p>
+    </div>
+
+    <div id="head9" class="head9">
+        <h3 style="color: blueviolet; font-size: 25px; text-transform: uppercase;">Filtragem de numero do array</h3>
+        <h3 style="text-align: justify; margin-top: 25px;  max-width: 80%;">
+            
+        </h3>
+
+        <p></p>
+        <img src="r.png" alt="" style="width: 450px;">
+        <p></p>
+        <img src="a.png" alt="" style="width: 450px;">
+
+        <p style="color: white;"></p>
+    </div>
+
 
     
 
