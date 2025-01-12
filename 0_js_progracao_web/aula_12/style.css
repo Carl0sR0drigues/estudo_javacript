@@ -4,6 +4,106 @@
 }
 body{
     background-color: #000;
-    color: white;
+    color: rgb(150, 150, 150);
     font-family: 'Times New Roman', Times, serif;
 }
+
+.container{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin: auto;
+    width: 90%;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    line-height: 1.5;
+}
+
+b {
+    color: #26ff00;
+}
+
+img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #26ff00;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #26ff00, /* Glow próximo à borda */
+                0 0 20px #26ff00, /* Glow intermediário */
+                0 0 30px #26ff00; /* Glow mais distante */
+}
+
+strong {
+    color: #ffffff;
+    font-family: 'arial black', arial;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+    ;
+}
+
+.header {
+    background-color: #000;
+    color: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ff0000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 100%;
+    box-shadow: 0 4px 10px #ff0000;
+}
+
+
+.numero{
+    font-size: 25px;
+    margin-top: 10px;
+    border: 3px solid #ff0000;
+    border-radius: 9px;
+}
+
+.verificar {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #26ff00;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'arial black', arial;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

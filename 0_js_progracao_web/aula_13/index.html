@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo_js.png">
+    <title>Aula 13</title>
+</head>
+<body>
+    <button class="modos" onclick="claroEscuto()">DARK/LIGHT</button>
+    <div class="container1">
+        <h1>SWITCH</h1>
+        <h3>
+            O <b>switch</b> é uma estrutura de controle usada no <b class="js">JavaScript</b> para tomar decisões com base no valor de uma variável ou expressão.
+            <br>Ele é particularmente útil quando você precisa comparar um único valor com várias opções possíveis.
+        </h3>
+    </div>
+    <div class="container2">
+        <h3>Estrutura Básica do <b>switch</b></h3>
+        <br>
+        <img src="switchBase.png" alt="">
+    </div>
+    <div class="container3">
+        <h2><strong>Como Funciona?</strong></h2>
+        <h3>
+            <br>1. <b>expressao</b>: É avaliada uma única vez.
+            <br>2. <b>case valor</b>: Compara o valor da expressão com o valor especificado.
+            <br>3. <b>break</b>: Finaliza a execução do bloco do case. Sem ele, os casos seguintes também serão executados (o que é chamado de "fall-through").
+            <br>4. <b>default</b>: Opcional. Executa um bloco de código se nenhum dos case for atendido.
+        </h3>
+    </div>
+    <div class="container4">
+        <h2><strong>Dicas para Uso do switch:</strong></h2>
+        <h3>
+            <strong>1. Evite "Fall-Through":</strong>
+            <br>
+            Sempre inclua break após cada caso, a menos que você queira intencionalmente que os próximos blocos sejam executados.
+            <br>
+            <br><strong>2. Use para Comparações Simples:</strong>
+            <br>O switch é ideal para verificar valores fixos, como números ou strings.
+            <br>
+            <br><strong>3. Considere o default:</strong>
+            <br>Inclua sempre um default para tratar casos não previstos.
+        </h3>
+        <br>
+        <h2><strong>Exemplo de "Fall-Through" Intencional</strong></h2>
+        <br>
+        <img src="fallThrouhg.png" alt="">
+        <br>
+        <h3>
+            Saída: O número está entre 1 e 3
+            <br>
+            Aqui, os casos 1, 2 e 3 executam o mesmo bloco de código.
+        </h3>
+        <br>
+        <input type="text" id="numero" class="numero" placeholder="Digite um número">
+        <br>
+        <button class="decimal" onclick="decimal()">Verificar</button>
+        <br>
+        <h3 id="resultado" class="resultado"></h3>
+        <h2>
+            <strong>Funcionamento:</strong>
+            <br>O valor do input é capturado usando <b>document.getElementById('numero').value</b>.
+            <br>Convertido para inteiro com <b>parseInt(numero)</b>.
+            <br>Usando <b>switch (true)</b>, o código verifica o intervalo do número e define a categoria.
+            <br>O resultado é exibido no elemento com o ID resultado.
+            <br>
+        </h2>
+        <br>
+        <h2>Codigo da função usada acima</h2>
+        <img class="codigoSwitch" src="codigoSwitch.png" alt="">
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

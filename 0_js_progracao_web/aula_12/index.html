@@ -8,15 +8,73 @@
     <title>Aula 12</title>
 </head>
 <body>
-    <div class="container" style="text-align: center;">
-        <h1>VAMOS VER SE O NUMERO É UNIDADE, DECIMAL, CEMTENA MILHAR</h1>
-        <br>
-        <input type="text" id="numero" class="numero" placeholder="UM VALOR">
-        <button onclick="decimal()">VERIFICAR</button>
-        <h2 id="resultado" class="resultado"></h2>
+    <div id="head" class="head">
+        <h1 class="header">if, else e else if </h1>
+        <h2>
+            Nessa aula vamos aprender a usar o if, else e else if para fazer verificações em nossos códigos.
+            <br>
+            <br>
+            O uso de <b>if</b>, <b>else</b> e <b>else if</b> no JavaScript é essencial para tomar decisões no código com base em condições. 
+            Eles permitem executar blocos de código diferentes dependendo se uma condição é verdadeira ou falsa.
+            <br>
+            <br>
+            <strong>Estrutura Básica do <b>if</b> :</strong>
+            <br>
+            O if é usado para executar um bloco de código apenas se uma condição for verdadeira (true).
+            <br>
+            <img src="if.png" alt="">
+            <br>
+            <br>
+            <strong>Adicionando o <b>else</b> :</strong>
+            <br>
+            O else é usado para executar outro bloco de código se a condição for falsa (false)
+            <br>
+            <img src="else.png" alt="">
+            <br>
+            <br>
+            <strong>Usando o <b>else if</b> :</strong>
+            <br>
+            O <b>else if</b> é usado para verificar múltiplas condições. Ele é avaliado somente se as condições anteriores forem falsas.
+            <br>
+            <img src="else_if.png" alt="">
+        </h2>
+
     </div>
-
-
+    <br>
+    <div class="container">
+        <h2>Exemplo Simples</h2>
+        <br>
+        <h2>VAMOS VER SE O NUMERO É UNIDADE, DEZENA, CENTENA OU MILHAR</h2>
+        <input type="text" id="numero" class="numero" placeholder="DIGITE UM VALOR">
+        <br>
+        <button onclick="decimal()" class="verificar">VERIFICAR</button>
+        <h2 id="resultado" class="resultado"></h2>
+        <br>
+        <h2>CODIGO DO EXEMPLO</h2>
+        <img src="modelo.png" alt="">
+        <br>
+        <h2>
+            <br>Como Funciona?
+            <br>Primeiro, verifica o <b>if</b>:
+            <br>Se a condição for verdadeira, executa o bloco de código e ignora o restante.
+            <br>Se o <b>if</b> for falso, verifica o else <b>if</b>:
+            <br>Avalia a próxima condição. Se verdadeira, executa o bloco correspondente e ignora o restante.
+            <br>Se nenhum dos <b>if</b> ou <b>else if</b> for verdadeiro, executa o else:
+            <br>Serve como um "caminho padrão".
+            <br>
+            <br>
+        </h2>
+    </div>
+    <div class="center-div">
+        <strong>Dicas para Uso:</strong>
+        <p class="centered-div">
+                1️⃣ Use o <b>if</b> para verificar condições simples.
+            <br>2️⃣ Use o <b>else if</b> para lidar com múltiplos casos.
+            <br>3️⃣ Use o <b>else</b> para capturar qualquer situação não prevista.
+        </p>
+    </div>
+    <br>
+    <br>
     <script src="script.js"></script>
 </body>
 </html>

@@ -16,3 +16,4 @@ function decimal(){
         document.getElementById('resultado').innerHTML = 'O número é dezenas de milhares';
     }
 }
+
