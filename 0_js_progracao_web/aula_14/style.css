@@ -15,10 +15,90 @@ body .dark-light{
     color: black;
 }
 
+.tituloH2 strong{
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px -5px red, 0 20px 20px -10px red;
+}
+
 .container1{
-    display: flex;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+.container2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.container2-2{
+    width: 100%;
+    display: flex;
+    align-items: justify;
+    justify-content: center;
+}
+
+.container1 h1{
+    border: 2px solid blueviolet;
+    width: 90%;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 30px blueviolet;
+}
+
+h1{
+    font-size: 40px;
+    margin: 25px 0;
+    color: blueviolet;
+}
+
+h3{
+    text-align: justify;
+    width: 50%;
+    line-height: 1.5;
+}
+
+h2{
+    padding: 20px;
+}
+
+p{
+    font-size: 20px;
+    padding: 10px;
+}
+
+b{
+    color: rgb(0, 128, 255);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+img{
+    box-shadow: 0 0 10px blueviolet, 0 0 20px blueviolet;
+    border-radius: 10px;
+    margin: 10px;
+    width: 30%;
+}
+strong{
+    color: rgb(255, 0, 0);
+    font-family: 'arial black', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.js{
+    color: rgb(255, 230, 0);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 100;
 }
