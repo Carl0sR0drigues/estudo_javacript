@@ -30,6 +30,13 @@ body .dark-light{
     justify-content: center;
 }
 
+.container1 h1{
+    border: 2px solid blueviolet;
+    width: 90%;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 30px blueviolet;
+}
 .container2{
     width: 100%;
     display: flex;
@@ -46,12 +53,29 @@ body .dark-light{
     justify-content: center;
 }
 
-.container1 h1{
-    border: 2px solid blueviolet;
-    width: 90%;
-    border-radius: 30px;
-    padding: 10px;
-    box-shadow: 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 30px blueviolet;
+.container3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.container3-3{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.fundo{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 h1{
@@ -80,6 +104,9 @@ b{
     font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     font-weight: 100;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 img{
