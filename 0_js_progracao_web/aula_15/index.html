@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo_js.png">
+    <title>Aula 15</title>
+</head>
+<body>
+    <div class="vamos" id="vamos">
+        <h1>
+            EVENTOS DE TEMPO COM JAVASCRIPT
+        </h1>
+        <h2>            
+            Os eventos de tempo permitem a execução do código em intervalos de tempo
+            especificados.Esses intervalos de tempo são chamados de eventos de cronometragem.
+            <br>
+            <br>
+            Os dois métodos-chave para usar com JavaScript são: <br>
+            <br>
+
+            setTimeout(function, tempo em milisegundos)
+            <br>
+            Executa uma função, depois de esperar um número especificado de milissegundos. 
+            <br>
+            setInterval(function, milliseconds) É o mesmo que setTimeout(), mas repete a execução da função continuamente.
+        </h2>
+        <h1>Exemplo</h1>
+        <h2 id="tempo" style="color: red; text-transform: uppercase;">00</h2>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <button onclick="ativar()" style="padding: 50px; margin: 12px; background-color: green; font-size: 20px; font-family: 'arial black'; border-radius: 90px;">Clique para ver setTimeout</button>
+        <button onclick="desativar()" style="padding: 50px; margin: 12px; background-color: rgb(255, 0, 0); font-size: 20px; font-family: 'arial black'; motion: auto; border-radius: 90px;">Clique para ver setInterval</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2 id="temporismo" style="color: red; text-transform: uppercase; text-align: center;">00</h2>
+    <div style="display: flex; justify-content: center;">
+        <button onclick="contar()" style="padding: 50px; margin: 12px; background-color: green; font-size: 20px; font-family: 'arial black'; border-radius: 90px;">Iniciar Contagem</button>
+        <button onclick="parar()" style="padding: 50px; margin: 12px; background-color: rgb(255, 0, 0); font-size: 20px; font-family: 'arial black'; motion: auto; border-radius: 90px;">Parar Contagem</button>
+    </div>
+
+    <audio id="alarme" preload="auto">
+        <source src="CéuAzul.mp3" type="audio/mpeg">
+    </audio>
+
+    <div style="display: flex; flex-direction: column; padding-top: 50px; align-items: center; justify-content: center;">
+        <p>CODIGO DAS FUNÇÕES ACIMA</p>
+        <img src="code.png" alt="">
+        <br>
+        <div style="padding: 25px; width: 50%;">
+            <p>Esse código contém funções para gerenciar dois tipos de temporizadores em JavaScript: <code>setTimeout</code> e <code>setInterval</code>, usados para criar temporizações ou intervalos periódicos. Aqui está uma explicação detalhada de cada função:</p>
+    
+            <h2>1. <code>function ativar()</code></h2>
+            <p><strong>Propósito:</strong> Aguarda 3 segundos antes de executar uma ação.</p>
+            <p><strong>Funcionamento:</strong></p>
+            <ul>
+                <li>Muda o texto do elemento com o ID <code>"tempo"</code> para <code>"Aguarde 3 segundos"</code>.</li>
+                <li>Usa <code>setTimeout</code> para definir uma ação a ser executada após 3000 milissegundos (3 segundos):</li>
+                <ul>
+                    <li>Altera o texto do elemento para <code>"Executou o setTimeout"</code>.</li>
+                    <li>Muda a cor de fundo da página para verde.</li>
+                </ul>
+                <li>A variável <code>tempo</code> armazena a referência ao temporizador, permitindo que ele seja cancelado.</li>
+            </ul>
+        
+            <h2>2. <code>function desativar()</code></h2>
+            <p><strong>Propósito:</strong> Cancela o temporizador criado com <code>setTimeout</code>.</p>
+            <p><strong>Funcionamento:</strong></p>
+            <ul>
+                <li>Usa <code>clearTimeout(tempo)</code> para cancelar o temporizador armazenado na variável <code>tempo</code>.</li>
+                <li>Altera o texto do elemento com o ID <code>"tempo"</code> para <code>"Contagem parada"</code>.</li>
+            </ul>
+        
+            <h2>3. <code>function contar()</code></h2>
+            <p><strong>Propósito:</strong> Inicia um contador que incrementa o valor exibido na página a cada segundo.</p>
+            <p><strong>Funcionamento:</strong></p>
+            <ul>
+                <li>Usa <code>setInterval</code> para executar um bloco de código a cada 1000 milissegundos (1 segundo).</li>
+                <li>No intervalo:</li>
+                <ul>
+                    <li>Obtém o valor atual do elemento com o ID <code>"temporismo"</code>.</li>
+                    <li>Converte o valor para inteiro com <code>parseInt</code> e incrementa-o.</li>
+                    <li>Atualiza o texto do elemento com o novo valor.</li>
+                </ul>
+                <li>Verifica se o valor (<code>soma</code>) chegou a 3:</li>
+                <ul>
+                    <li>Reproduz um som utilizando o elemento <code>&lt;audio&gt;</code> com ID <code>"alarme"</code>.</li>
+                    <li>Para o intervalo com <code>clearInterval(temporizador)</code>.</li>
+                </ul>
+            </ul>
+        
+            <h2>4. <code>function parar()</code></h2>
+            <p><strong>Propósito:</strong> Para o intervalo criado com <code>setInterval</code>.</p>
+            <p><strong>Funcionamento:</strong></p>
+            <ul>
+                <li>Usa <code>clearInterval(temporizador)</code> para cancelar o intervalo armazenado na variável <code>temporizador</code>.</li>
+            </ul>
+        
+            <h2>Cenário de Uso</h2>
+            <ul>
+                <li><code>ativar()</code>: Mostra uma mensagem indicando uma espera de 3 segundos e altera o fundo da página após esse período.</li>
+                <li><code>desativar()</code>: Cancela o temporizador do <code>setTimeout</code> antes que ele altere a mensagem ou o fundo.</li>
+                <li><code>contar()</code>: Inicia um contador que incrementa o número exibido no elemento <code>temporismo</code>. Quando o número atinge 3:
+                    <ul>
+                        <li>Toca um som.</li>
+                        <li>Para o contador.</li>
+                    </ul>
+                </li>
+                <li><code>parar()</code>: Interrompe o contador a qualquer momento, independentemente do valor atual.</li>
+            </ul>
+        
+            <h2>Resumo:</h2>
+            <ul>
+                <li><strong><code>setTimeout</code>:</strong> Executa uma ação única após um tempo determinado.</li>
+                <li><strong><code>setInterval</code>:</strong> Executa uma ação repetidamente em intervalos definidos.</li>
+                <li><strong><code>clearTimeout</code> e <code>clearInterval</code>:</strong> Cancelam temporizadores ou intervalos em execução.</li>
+            </ul>
+            <p>Essas funções são fundamentais para gerenciar eventos com temporização no JavaScript!</p>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
