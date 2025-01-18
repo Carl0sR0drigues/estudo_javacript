@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <title>EXERCICIOS JS</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>EXERCICIOS JS</h1>
+        <h2>
+            Esta pagina é dedicada as atividades feitas em <b>python</b> e convertida para <b>javascript</b>
+        </h2>
+    </div>
+
+    <div class="atividade1">
+        <div>
+            <h3>Python</h3>
+            <h4>Criação de lista e acrecimo de itens na lista PY</h4>
+            <img src="py1.png" alt="">
+        </div>
+        <div>
+            <h3>JavaScript</h3>
+            <h4>Criação de lista e acrecimo de itens na lista JS</h4>
+            <img src="js1.png" alt="">
+        </div>
+        <div style="width: 50%; margin: auto;">
+            <h3>Aplicação do Codigo</h3>
+            <h4>Criação de lista e acrecimo de itens na lista</h4>
+            <textarea id="novoItem" type="text" placeholder="ADICIONE UM NOVO ITEM"></textarea>
+            <br>
+            <button id="adicionarItem">ADICIONAR NA LISTA</button>
+            <ul id="listagem"></ul>
+        </div>
+    </div>
+
+    <div class="atividade1">
+        <div>
+            <h3>Python</h3>
+            <h4>Calculo de IMC PY</h4>
+            <img src="py2.png" alt="">
+        </div>
+        <div>
+            <h3>JavaScript</h3>
+            <h4>Calculo de IMC JS</h4>
+            <img src="js2.png" alt="">
+        </div>
+        <div>
+            <h3>Aplicação do Codigo</h3>
+            <h4>Calculo de IMC</h4>
+            <label for="nome">Nome:</label>
+            <br>
+            <input type="text" id="nome" placeholder="Digite seu nome"><br>
+            
+            <label for="altura">Altura (m):</label>
+            <br>
+            <input type="text" id="altura" placeholder="Ex.: 1.75"><br>
+            
+            <label for="peso">Peso (kg):</label>
+            <br>
+            <input type="text" id="peso" placeholder="Ex.: 70"><br>
+            
+            <button onclick="calculoImc()">Calcular IMC</button>
+            
+            <p id="seuImc"></p>
+            <br>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
