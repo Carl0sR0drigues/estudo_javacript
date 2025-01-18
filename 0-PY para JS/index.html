@@ -15,7 +15,7 @@
         </h2>
     </div>
 
-    <div class="atividade1">
+    <div class="atividades">
         <div>
             <h3>Python</h3>
             <h4>Criação de lista e acrecimo de itens na lista PY</h4>
@@ -26,17 +26,18 @@
             <h4>Criação de lista e acrecimo de itens na lista JS</h4>
             <img src="js1.png" alt="">
         </div>
-        <div style="width: 50%; margin: auto;">
+        <div style="width: 30%; margin: auto; border: 2px solid white; border-radius: 15px; background-color: indigo">
+            <br>
             <h3>Aplicação do Codigo</h3>
             <h4>Criação de lista e acrecimo de itens na lista</h4>
-            <textarea id="novoItem" type="text" placeholder="ADICIONE UM NOVO ITEM"></textarea>
+            <textarea id="novoItem" type="text" placeholder="ADICIONE UM NOVO ITEM" maxlength="40"></textarea>
             <br>
             <button id="adicionarItem">ADICIONAR NA LISTA</button>
             <ul id="listagem"></ul>
         </div>
     </div>
 
-    <div class="atividade1">
+    <div class="atividades">
         <div>
             <h3>Python</h3>
             <h4>Calculo de IMC PY</h4>
@@ -47,28 +48,52 @@
             <h4>Calculo de IMC JS</h4>
             <img src="js2.png" alt="">
         </div>
-        <div>
+        <div style="width: 30%; margin: auto; border: 2px solid white; border-radius: 15px; background-color: indigo;">
+            <br>
+            <br>
+            <br>
             <h3>Aplicação do Codigo</h3>
+            <br>
             <h4>Calculo de IMC</h4>
+            <br>
             <label for="nome">Nome:</label>
             <br>
-            <input type="text" id="nome" placeholder="Digite seu nome"><br>
+            <input type="text" id="nome" placeholder="Digite seu nome" maxlength="40"><br>
+            <br>
             
             <label for="altura">Altura (m):</label>
             <br>
-            <input type="text" id="altura" placeholder="Ex.: 1.75"><br>
+            <input type="text" id="altura" placeholder="Ex.: 1.75" maxlength="40"><br>
+            <br>
             
             <label for="peso">Peso (kg):</label>
             <br>
-            <input type="text" id="peso" placeholder="Ex.: 70"><br>
-            
+            <input type="text" id="peso" placeholder="Ex.: 70" maxlength="40"><br>
+            <br>
             <button onclick="calculoImc()">Calcular IMC</button>
             
             <p id="seuImc"></p>
             <br>
-            
+            <p id="voceEsta"></p>
+            <br>
+            <p id="seuPeso"></p>
+            <br>
         </div>
     </div>
+
+    <div class="atividade1">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
     <script src="script.js"></script>
 </body>
 </html>
